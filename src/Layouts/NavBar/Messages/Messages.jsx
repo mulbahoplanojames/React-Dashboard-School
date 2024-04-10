@@ -1,0 +1,49 @@
+import { AiOutlineMessage } from "react-icons/ai";
+import FriendsMessages from "./Individual Messages/FriendsMessages";
+
+const Messages = () => {
+	return (
+		<>
+			{/* // main icon for dropdown when click upon */}
+			<div className='flex-none'>
+				<div className='dropdown dropdown-end'>
+					<div tabIndex={0} role='button' className='btn btn-ghost btn-circle'>
+						<div className='indicator'>
+							<AiOutlineMessage className='h-7 w-7' />
+							<span className='badge badge-sm indicator-item bg-blue-500 text-white'>
+								8
+							</span>
+						</div>
+					</div>
+					<div
+						tabIndex={0}
+						className='mt-6 z-30 card card-compact dropdown-content w-[500px] bg-base-100 shadow'
+					>
+						<div className='w-full h-80 z-40 overflow-y-scroll'>
+							{/* // Notification for incoming messages  */}
+							<div className='font-bold text-lg bg-neutral-400 flex justify-between items-center py-2 px-3 mb-4'>
+								<p className='text-xl uppercase'>Messages</p>
+								<button className='bg-blue-500 py-1 p-2 rounded-md text-white'>
+									New 2
+								</button>
+							</div>
+							{/* // Avatar and messages recieve from friends */}
+							<FriendsMessages />
+							<FriendsMessages />
+							<FriendsMessages />
+							<FriendsMessages />
+							<FriendsMessages />
+							<div className='card-actions'>
+								<p className='bg-neutral-300 w-full py-2 text-center'>
+									All Messages
+								</p>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</>
+	);
+};
+
+export default Messages;

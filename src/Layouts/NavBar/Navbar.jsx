@@ -1,9 +1,10 @@
+import Messages from "./Messages/Messages";
 import UserAvatar from "./Navbar UserAvatar/UserAvatar";
 
 const Navbar = () => {
 	return (
 		<>
-			<nav className='flex justify-between w-full shadow-lg py-2 px-8'>
+			<nav className='flex justify-between w-full shadow-lg py-2 md:px-8 px-2 mb-8'>
 				{/* // Search input field  */}
 				<div className='form-control'>
 					<input
@@ -14,7 +15,8 @@ const Navbar = () => {
 				</div>
 
 				{/* // Right links for the navigation contain the avatar and other components */}
-				<div className='flex-none gap-2'>
+				<div className='flex gap-4'>
+					<Messages />
 					<UserAvatar />
 				</div>
 			</nav>
