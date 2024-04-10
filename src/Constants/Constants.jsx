@@ -59,3 +59,41 @@ const Holidays = [
 ];
 
 export default Holidays;
+
+/*
+ * Messages that are recieve from friends in the messages navigation bar
+ * This Data FriendMessages  is used with in the Messages
+ * component to render all messages obtain from friends
+ */
+export const FriendMessages = [
+	{
+		id: 1,
+		name: "James Mulbah",
+		message: "Richard i found you on LinkedIn..",
+		time: "Just Now",
+	},
+	{
+		id: 2,
+		name: "John Doe",
+		message: "FWD, Is was there any important message given in cless today",
+		time: "16 mins",
+	},
+	{
+		id: 3,
+		name: "Abdalla",
+		message: "Please take a print of the assignment and send me",
+		time: "2 hrs",
+	},
+	{
+		id: 4,
+		name: "Solomon",
+		message: "Please apply for Oplano..",
+		time: "40 mins",
+	},
+	{
+		id: 5,
+		name: "Mary",
+		message: "At what time are we going to meet to do thhe graup assignment?",
+		time: "50 mins",
+	},
+];

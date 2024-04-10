@@ -1,5 +1,12 @@
 import { AiOutlineMessage } from "react-icons/ai";
 import FriendsMessages from "./Individual Messages/FriendsMessages";
+import { FriendMessages } from "../../../Constants/Constants";
+
+/*
+ * Messages that are recieve from friends in the messages navigation bar
+ * This component Messages is used with in the Navbar component to render
+ *  all messages obtain from friends when you click on the messages icon
+ */
 
 const Messages = () => {
 	return (
@@ -28,11 +35,15 @@ const Messages = () => {
 								</button>
 							</div>
 							{/* // Avatar and messages recieve from friends */}
-							<FriendsMessages />
-							<FriendsMessages />
-							<FriendsMessages />
-							<FriendsMessages />
-							<FriendsMessages />
+							{FriendMessages.map((message) => (
+								<FriendsMessages
+									key={message.id}
+									name={message.name}
+									message={message.message}
+									time={message.time}
+								/>
+							))}
+
 							<div className='card-actions'>
 								<p className='bg-neutral-300 w-full py-2 text-center'>
 									All Messages
