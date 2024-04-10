@@ -65,10 +65,9 @@ export default Holidays;
  * This Data FriendMessages  is used with in the Messages
  * component to render all messages obtain from friends
  */
-export const FriendMessages = [
+export const FriendMessagesData = [
 	{
 		id: 1,
-		name: "James Mulbah",
 		message: "Richard i found you on LinkedIn..",
 		time: "Just Now",
 	},
@@ -95,5 +94,38 @@ export const FriendMessages = [
 		name: "Mary",
 		message: "At what time are we going to meet to do thhe graup assignment?",
 		time: "50 mins",
+	},
+];
+
+/*
+ * Messages that are recieve from friends in the messages navigation bar
+ * This Data NotificationsData  is used with in the Notification
+ * component to render all Notifications obtain from other medias
+ */
+export const NotificationsData = [
+	{
+		id: 1,
+		message: "Congraduations!",
+		time: "Just Now",
+	},
+	{
+		id: 2,
+		message: "Peter Manson is now following",
+		time: "6 mins",
+	},
+	{
+		id: 3,
+		message: "Wilma, send you a message",
+		time: "10 mins",
+	},
+	{
+		id: 4,
+		message: "Jerry likes your picture",
+		time: "16 mins",
+	},
+	{
+		id: 5,
+		message: "Warning!!",
+		time: "20 mins",
 	},
 ];

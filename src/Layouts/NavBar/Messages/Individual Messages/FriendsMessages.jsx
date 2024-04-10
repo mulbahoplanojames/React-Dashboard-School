@@ -5,7 +5,7 @@
 const FriendsMessages = ({ name, message, time }) => {
 	return (
 		<>
-			<div className='flex items-center gap-4 px-2'>
+			<div className='flex items-center gap-4 px-2 mb-3'>
 				<div className='avatar online'>
 					<div className='w-10 rounded-full'>
 						<img

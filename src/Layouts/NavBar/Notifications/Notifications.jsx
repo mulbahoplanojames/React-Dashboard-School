@@ -1,6 +1,6 @@
-import { AiOutlineMessage } from "react-icons/ai";
-import FriendsMessages from "./Individual Messages/FriendsMessages";
-import { FriendMessagesData } from "../../../Constants/Constants";
+import { IoMdNotificationsOutline } from "react-icons/io";
+import FriendsMessages from "../Messages/Individual Messages/FriendsMessages";
+import { NotificationsData } from "../../../Constants/Constants";
 
 /*
  * Messages that are recieve from friends in the messages navigation bar
@@ -8,7 +8,7 @@ import { FriendMessagesData } from "../../../Constants/Constants";
  *  all messages obtain from friends when you click on the messages icon
  */
 
-const Messages = () => {
+const Notifications = () => {
 	return (
 		<>
 			{/* // main icon for dropdown when click upon */}
@@ -16,9 +16,9 @@ const Messages = () => {
 				<div className='dropdown dropdown-end'>
 					<div tabIndex={0} role='button' className='btn btn-ghost btn-circle'>
 						<div className='indicator'>
-							<AiOutlineMessage className='h-7 w-7' />
-							<span className='badge badge-sm indicator-item bg-blue-500 text-white'>
-								5
+							<IoMdNotificationsOutline className='h-7 w-7' />
+							<span className='badge badge-sm indicator-item bg-orange-500 text-white'>
+								9
 							</span>
 						</div>
 					</div>
@@ -29,16 +29,15 @@ const Messages = () => {
 						<div className='w-full h-80 z-40 overflow-y-scroll'>
 							{/* // Notification for incoming messages  */}
 							<div className='font-bold text-lg bg-neutral-400 flex justify-between items-center py-2 px-3 mb-4'>
-								<p className='text-xl uppercase'>Messages</p>
-								<button className='bg-blue-500 py-1 p-2 rounded-md text-white'>
-									New 2
+								<p className='text-xl uppercase'>Notifications</p>
+								<button className='bg-purple-500 py-1 p-2 rounded-md text-white'>
+									New 9
 								</button>
 							</div>
 							{/* // Avatar and messages recieve from friends */}
-							{FriendMessagesData.map((message) => (
+							{NotificationsData.map((message) => (
 								<FriendsMessages
 									key={message.id}
-									name={message.name}
 									message={message.message}
 									time={message.time}
 								/>
@@ -46,7 +45,7 @@ const Messages = () => {
 
 							<div className='card-actions'>
 								<p className='bg-neutral-300 w-full py-2 text-center'>
-									All Messages
+									All Notifications
 								</p>
 							</div>
 						</div>
@@ -57,4 +56,4 @@ const Messages = () => {
 	);
 };
 
-export default Messages;
+export default Notifications;
