@@ -1,5 +1,5 @@
 export const Dashboards = [
-	{ id: "dashboard1", path: "/dashboard1", label: "Dashboard 1" },
+	{ id: "dashboard1", path: "/", label: "Dashboard 1" },
 	{ id: "dashboard2", path: "/dashboard2", label: "Dashboard 2" },
 	{ id: "dashboard3", path: "/dashboard3", label: "Dashboard 3" },
 ];
