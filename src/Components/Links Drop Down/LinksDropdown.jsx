@@ -1,5 +1,10 @@
 import { Link } from "react-router-dom";
 
+/*
+ * This component LinksDropdown is used with in the SidebarLinks
+ * component and also the sidebar component to render all links dropdown with in the sidebar
+ */
+
 const LinksDropdown = ({ object, title, icon }) => {
 	return (
 		<>

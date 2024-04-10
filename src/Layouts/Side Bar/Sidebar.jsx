@@ -23,7 +23,6 @@ const Sidebar = () => {
 				<SidebarLinks />
 				{/* // Footer Bar Navlinks */}
 				<div className=''>
-					<h1>Footer</h1>
 					<LinksDropdown
 						object={Forms}
 						title={"Forms"}

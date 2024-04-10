@@ -1,3 +1,8 @@
+/*
+ * This component UserAvatar is used with in the Navbar component to
+ * render the some of the user details like the avatar, profile, settings and logout
+ */
+
 const UserAvatar = () => {
 	return (
 		<>
