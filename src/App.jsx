@@ -1,9 +1,18 @@
-import React from "react";
+import { BrowserRouter, Routes, Route } from "react-router-dom";
+import Layout from "./Layouts/Layout/Layout";
 
 const App = () => {
 	return (
 		<>
-			<div className=''>Play</div>
+			{/* // Routes to navigate between pages */}
+			<BrowserRouter>
+				<Routes>
+					<Route path='/' element={<Layout />}>
+						<Route />
+						<Route />
+					</Route>
+				</Routes>
+			</BrowserRouter>
 		</>
 	);
 };
