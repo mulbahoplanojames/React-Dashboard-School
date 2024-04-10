@@ -1,4 +1,4 @@
-import Navbar from "../Navigation Bar/Navbar";
+import Navbar from "../NavBar/Navbar";
 import Sidebar from "../Side Bar/Sidebar";
 import { Outlet } from "react-router-dom";
 
@@ -9,7 +9,7 @@ const Layout = () => {
 			<section className='w-screen h-screen flex'>
 				<Sidebar />
 				{/* // Navbar and the Outlets which represent the other components in a one div  */}
-				<div className=''>
+				<div className='w-full'>
 					<Navbar />
 					<div className=''>{<Outlet />}</div>
 				</div>
