@@ -11,10 +11,9 @@ import { MdOutlineFormatIndentIncrease } from "react-icons/md";
 const Sidebar = () => {
 	return (
 		<>
-			<div className='w-64 flex flex-col  overflow-y-scroll hidden md:block'>
+			<div className='w-80 flex flex-col  overflow-y-scroll '>
 				{/* // Logo */}
-
-				<div className='flex items-center justify-center gap-3 bg-blue-600 py-6 cursor-pointer mb-8'>
+				<div className='flex items-center justify-center gap-3 bg-blue-600 py-4 cursor-pointer mb-8'>
 					<RiSchoolFill className='text-4xl text-white' />
 					<h1 className='text-3xl text-white'>Dev!Tech</h1>
 				</div>

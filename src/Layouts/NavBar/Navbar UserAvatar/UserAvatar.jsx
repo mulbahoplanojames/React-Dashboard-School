@@ -3,6 +3,8 @@
  * render the some of the user details like the avatar, profile, settings and logout
  */
 
+import avatar from "/src/assets/illu1.jpg";
+
 import { Link } from "react-router-dom";
 
 const UserAvatar = () => {
@@ -15,10 +17,7 @@ const UserAvatar = () => {
 					className='btn btn-ghost btn-circle avatar'
 				>
 					<div className='w-10 rounded-full'>
-						<img
-							alt='Tailwind CSS Navbar component'
-							src='https://daisyui.com/images/stock/photo-1534528741775-53994a69daeb.jpg'
-						/>
+						<img alt='User avatar' src={avatar} />
 					</div>
 				</div>
 				{/* // user details info like Profile, Setting and LogOut  */}
