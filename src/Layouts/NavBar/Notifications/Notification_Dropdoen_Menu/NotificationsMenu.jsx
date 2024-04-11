@@ -1,4 +1,5 @@
 /*
+ * ==================================================================
  * This component is used with in the Messages
  * component to render all messages obtain from friends
  */

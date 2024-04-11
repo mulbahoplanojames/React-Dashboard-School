@@ -1,10 +1,10 @@
 /*
  * ===========================================================================================
- * This component SidebarLinks is user with in the sidebar to display  or render
+ * This component SidebarLinks is use with in the sidebar to display  or render
  * all of the sidebar Navigation links between different components
  */
 
-import LinksDropdown from "../SideBar Links Dropdown/LinksDropdown";
+import LinksDropdown from "../SideBar_Links_Dropdown/LinksDropdown";
 
 //! Links data from the contsants data files
 import Holidays, {

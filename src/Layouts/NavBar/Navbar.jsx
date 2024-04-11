@@ -1,5 +1,5 @@
 import Messages from "./Messages/Messages";
-import UserAvatar from "./Navbar UserAvatar/UserAvatar";
+import UserAvatar from "./Navbar_UserAvatar/UserAvatar";
 import Notifications from "./Notifications/Notifications";
 
 const Navbar = () => {

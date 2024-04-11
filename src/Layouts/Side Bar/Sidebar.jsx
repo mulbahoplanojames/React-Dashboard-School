@@ -1,13 +1,13 @@
 /*
  * ===========================================================================================
- * This component Sidebar is user with in the layout component to display  or render
+ * This component Sidebar is use with in the layout component to display  or render
  * all of the sidebar Navigation links between different components
  */
 
 import { RiSchoolFill } from "react-icons/ri";
 import UserMiniProfie from "../../Components/User Mini Profile/UserMiniProfie";
 import SidebarLinks from "../../Components/SideBar NavLinks/SidebarLinks";
-import LinksDropdown from "../../Components/SideBar Links Dropdown/LinksDropdown";
+import LinksDropdown from "../../Components/SideBar_Links_Dropdown/LinksDropdown";
 //form from constants data
 import { Forms } from "../../Constants/Constants";
 

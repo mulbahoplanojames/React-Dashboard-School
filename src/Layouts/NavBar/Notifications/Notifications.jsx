@@ -1,7 +1,6 @@
 import { IoMdNotificationsOutline } from "react-icons/io";
-import FriendsMessages from "../Messages/Individual Messages/FriendsMessages";
 import { NotificationsData } from "../../../Constants/Constants";
-import NotificationMenu from "./Notification Dropdoen Menu/NotificationsMenu";
+import NotificationMenu from "./Notification_Dropdoen_Menu/NotificationsMenu";
 
 /*
  * Notifications that are recieve from friends and oter medias in the Notifications
