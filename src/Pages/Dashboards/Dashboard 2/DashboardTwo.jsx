@@ -1,6 +1,6 @@
 const DashboardTwo = () => {
 	return (
-		<div>
+		<div className='bg-green-800'>
 			<p>DashboardTwo</p>
 			<a href='/'>To Home</a>
 		</div>

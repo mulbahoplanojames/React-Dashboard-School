@@ -3,6 +3,8 @@
  * render the some of the user details like the avatar, profile, settings and logout
  */
 
+import { Link } from "react-router-dom";
+
 const UserAvatar = () => {
 	return (
 		<>
@@ -34,7 +36,7 @@ const UserAvatar = () => {
 						<a>Settings</a>
 					</li>
 					<li>
-						<a>Logout</a>
+						<Link to={"/logout"}>Logout</Link>
 					</li>
 				</ul>
 			</div>

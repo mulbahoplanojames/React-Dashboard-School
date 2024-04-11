@@ -3,6 +3,7 @@ import Layout from "./Layouts/Layout/Layout";
 import DashboardOne from "./Pages/Dashboards/Dashboard 1/DashboardOne";
 import DashboardTwo from "./Pages/Dashboards/Dashboard 2/DashboardTwo";
 import DashboardThree from "./Pages/Dashboards/Dashboard 3/DashboardThree";
+import Logout from "./Components/Logout/Logout";
 
 const App = () => {
 	return (
@@ -16,6 +17,8 @@ const App = () => {
 						<Route path='/dashboard3' element={<DashboardThree />} />
 						<Route />
 					</Route>
+
+					<Route path='/logout' element={<Logout />} />
 				</Routes>
 			</BrowserRouter>
 		</>
