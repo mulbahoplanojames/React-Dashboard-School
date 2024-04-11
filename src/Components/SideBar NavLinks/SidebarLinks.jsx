@@ -58,11 +58,6 @@ const SidebarLinks = () => {
 					title={"Email"}
 					icon={<CiMail className='text-2xl' />}
 				/>
-				<LinksDropdown
-					object={Forms}
-					title={"Forms"}
-					icon={<MdOutlineFormatIndentIncrease className='text-2xl' />}
-				/>
 			</div>
 		</>
 	);

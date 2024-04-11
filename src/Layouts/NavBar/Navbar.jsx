@@ -5,7 +5,7 @@ import Notifications from "./Notifications/Notifications";
 const Navbar = () => {
 	return (
 		<>
-			<nav className='flex justify-between w-full shadow-lg py-2 md:px-8 px-2 mb-8'>
+			<nav className='flex justify-between w-full shadow-lg py-2 md:px-8 px-2'>
 				{/* // Search input field  */}
 				<div className='form-control'>
 					<input
