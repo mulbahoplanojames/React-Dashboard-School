@@ -1,3 +1,9 @@
+/*
+ * ===========================================================================================
+ * This component Sidebar is user with in the layout component to display  or render
+ * all of the sidebar Navigation links between different components
+ */
+
 import { RiSchoolFill } from "react-icons/ri";
 import UserMiniProfie from "../../Components/User Mini Profile/UserMiniProfie";
 import SidebarLinks from "../../Components/SideBar NavLinks/SidebarLinks";
@@ -11,7 +17,7 @@ import { MdOutlineFormatIndentIncrease } from "react-icons/md";
 const Sidebar = () => {
 	return (
 		<>
-			<div className='w-80 flex flex-col  overflow-y-scroll '>
+			<div className='w-80 flex flex-col  overflow-y-scroll sm:block hidden'>
 				{/* // Logo */}
 				<div className='flex items-center justify-center gap-3 bg-blue-600 py-4 cursor-pointer mb-8'>
 					<RiSchoolFill className='text-4xl text-white' />

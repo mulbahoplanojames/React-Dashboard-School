@@ -1,3 +1,9 @@
+/*
+ * ===========================================================================================
+ * This component SidebarLinks is user with in the sidebar to display  or render
+ * all of the sidebar Navigation links between different components
+ */
+
 import LinksDropdown from "../SideBar Links Dropdown/LinksDropdown";
 
 //! Links data from the contsants data files
@@ -7,7 +13,6 @@ import Holidays, {
 	Departments,
 	Email,
 	Fees,
-	Forms,
 	Students,
 } from "../../Constants/Constants";
 
@@ -17,7 +22,6 @@ import { LuUsers, LuCoffee } from "react-icons/lu";
 import { FaBook, FaRegBuilding } from "react-icons/fa";
 import { BiDollar } from "react-icons/bi";
 import { CiMail } from "react-icons/ci";
-import { MdOutlineFormatIndentIncrease } from "react-icons/md";
 
 const SidebarLinks = () => {
 	return (
