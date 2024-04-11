@@ -5,8 +5,8 @@
  */
 
 import { RiSchoolFill } from "react-icons/ri";
-import UserMiniProfie from "../../Components/User Mini Profile/UserMiniProfie";
-import SidebarLinks from "../../Components/SideBar NavLinks/SidebarLinks";
+import UserMiniProfie from "../../Components/User_Mini_Profile/UserMiniProfie";
+import SidebarLinks from "../../Components/SideBar_NavLinks/SidebarLinks";
 import LinksDropdown from "../../Components/SideBar_Links_Dropdown/LinksDropdown";
 //form from constants data
 import { Forms } from "../../Constants/Constants";
