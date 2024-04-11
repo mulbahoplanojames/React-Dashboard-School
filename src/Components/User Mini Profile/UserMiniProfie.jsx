@@ -1,3 +1,8 @@
+/*
+ * This component UserMini Profiles is used with in the Sidebar component
+ * to render the user image/avatar, positiona and name with in the sidebar
+ */
+
 const UserMiniProfie = () => {
 	return (
 		<>

@@ -98,7 +98,7 @@ export const FriendMessagesData = [
 ];
 
 /*
- * Messages that are recieve from friends in the messages navigation bar
+ * Notifications that are recieve from friends or other medias in the navigation bar
  * This Data NotificationsData  is used with in the Notification
  * component to render all Notifications obtain from other medias
  */
