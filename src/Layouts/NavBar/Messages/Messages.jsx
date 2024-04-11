@@ -31,7 +31,7 @@ const Messages = () => {
 							<div className='font-bold text-lg bg-neutral-400 flex justify-between items-center py-2 px-3 mb-4'>
 								<p className='text-xl uppercase'>Messages</p>
 								<button className='bg-blue-500 py-1 p-2 rounded-md text-white'>
-									New 2
+									New 5
 								</button>
 							</div>
 							{/* // Avatar and messages recieve from friends */}
@@ -41,6 +41,7 @@ const Messages = () => {
 									name={message.name}
 									message={message.message}
 									time={message.time}
+									avatar={message.avater}
 								/>
 							))}
 

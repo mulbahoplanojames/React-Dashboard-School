@@ -61,43 +61,58 @@ const Holidays = [
 export default Holidays;
 
 /*
+ * ===============================================================================
  * Messages that are recieve from friends in the messages navigation bar
  * This Data FriendMessages  is used with in the Messages
  * component to render all messages obtain from friends
  */
+
+import avatar1 from "/src/assets/illu1.jpg";
+import avatar2 from "/src/assets/illu2.jpg";
+import avatar3 from "/src/assets/illu3.jpg";
+import avatar4 from "/src/assets/illu4.jpg";
+import avatar5 from "/src/assets/illu5.jpg";
+
 export const FriendMessagesData = [
 	{
 		id: 1,
+		name: "Wilma William",
 		message: "Richard i found you on LinkedIn..",
 		time: "Just Now",
+		avater: avatar1,
 	},
 	{
 		id: 2,
 		name: "John Doe",
 		message: "FWD, Is was there any important message given in cless today",
 		time: "16 mins",
+		avater: avatar2,
 	},
 	{
 		id: 3,
 		name: "Abdalla",
 		message: "Please take a print of the assignment and send me",
 		time: "2 hrs",
+		avater: avatar3,
 	},
 	{
 		id: 4,
 		name: "Solomon",
 		message: "Please apply for Oplano..",
 		time: "40 mins",
+		avater: avatar4,
 	},
 	{
 		id: 5,
 		name: "Mary",
 		message: "At what time are we going to meet to do thhe graup assignment?",
 		time: "50 mins",
+		avater: avatar5,
 	},
 ];
 
 /*
+ * ===============================================================================
  * Notifications that are recieve from friends or other medias in the navigation bar
  * This Data NotificationsData  is used with in the Notification
  * component to render all Notifications obtain from other medias
