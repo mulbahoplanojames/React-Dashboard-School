@@ -102,30 +102,46 @@ export const FriendMessagesData = [
  * This Data NotificationsData  is used with in the Notification
  * component to render all Notifications obtain from other medias
  */
+
+//! Icons from React Icons
+import { FaCheck, FaRegUser, FaHeart } from "react-icons/fa";
+import { AiOutlineMessage } from "react-icons/ai";
+import { IoWarning } from "react-icons/io5";
+
 export const NotificationsData = [
 	{
 		id: 1,
-		message: "Congraduations!",
+		notification: "Congraduations!",
 		time: "Just Now",
+		color: "#e91e63",
+		icon: <FaCheck className='text-lg text-white' />,
 	},
 	{
 		id: 2,
-		message: "Peter Manson is now following",
+		notification: "Peter Manson is now following",
 		time: "6 mins",
+		color: "#2196f3",
+		icon: <FaRegUser className='text-lg text-white' />,
 	},
 	{
 		id: 3,
-		message: "Wilma, send you a message",
+		notification: "Wilma, send you a message",
 		time: "10 mins",
+		color: "#673ab7",
+		icon: <AiOutlineMessage className='text-lg text-white' />,
 	},
 	{
 		id: 4,
-		message: "Jerry likes your picture",
+		notification: "Jerry likes your picture",
 		time: "16 mins",
+		color: "pink",
+		icon: <FaHeart className='text-lg text-white' />,
 	},
 	{
 		id: 5,
-		message: "Warning!!",
+		notification: "Warning!!",
 		time: "20 mins",
+		color: "#f1c500",
+		icon: <IoWarning className='text-lg text-white' />,
 	},
 ];

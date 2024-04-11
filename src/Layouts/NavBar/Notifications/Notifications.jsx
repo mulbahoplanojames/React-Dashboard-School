@@ -1,11 +1,12 @@
 import { IoMdNotificationsOutline } from "react-icons/io";
 import FriendsMessages from "../Messages/Individual Messages/FriendsMessages";
 import { NotificationsData } from "../../../Constants/Constants";
+import NotificationMenu from "./Notification Dropdoen Menu/NotificationsMenu";
 
 /*
- * Messages that are recieve from friends in the messages navigation bar
- * This component Messages is used with in the Navbar component to render
- *  all messages obtain from friends when you click on the messages icon
+ * Notifications that are recieve from friends and oter medias in the Notifications
+ * navigation bar. This component Notifications is used with in the Navbar component to render
+ *  all Notifications obtain from friends when you click on the Notifications icon
  */
 
 const Notifications = () => {
@@ -35,11 +36,13 @@ const Notifications = () => {
 								</button>
 							</div>
 							{/* // Avatar and messages recieve from friends */}
-							{NotificationsData.map((message) => (
-								<FriendsMessages
-									key={message.id}
-									message={message.message}
-									time={message.time}
+							{NotificationsData.map((notifications) => (
+								<NotificationMenu
+									key={notifications.id}
+									notifications={notifications.notification}
+									time={notifications.time}
+									color={notifications.color}
+									icon={notifications.icon}
 								/>
 							))}
 

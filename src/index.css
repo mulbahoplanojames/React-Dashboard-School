@@ -12,11 +12,11 @@
 	border-radius: 30px;
 }
 ::-webkit-scrollbar-track {
-	background: #243073;
+	background: #000;
 	border-radius: 20px;
 }
 ::-webkit-scrollbar-thumb {
-	background: blue;
+	background: linear-gradient(to top, #243073, #fff);
 	height: 5px;
 	border-radius: 20px;
 }
