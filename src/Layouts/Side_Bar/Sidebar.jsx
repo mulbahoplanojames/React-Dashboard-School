@@ -9,7 +9,7 @@ import UserMiniProfie from "../../Components/User_Mini_Profile/UserMiniProfie";
 import SidebarLinks from "../../Components/SideBar_NavLinks/SidebarLinks";
 import LinksDropdown from "../../Components/SideBar_Links_Dropdown/LinksDropdown";
 //form from constants data
-import { Forms } from "../../Constants/Constants";
+import { Forms } from "../../Data/Data";
 
 //Icon from react icon
 import { MdOutlineFormatIndentIncrease } from "react-icons/md";

@@ -14,7 +14,7 @@ import Holidays, {
 	Email,
 	Fees,
 	Students,
-} from "../../Constants/Constants";
+} from "../../Data/Data";
 
 //! Icons from React Icon
 import { PiMonitorThin } from "react-icons/pi";
