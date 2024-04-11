@@ -16,6 +16,7 @@ const LinksDropdown = ({ object, title, icon }) => {
 								{icon}
 								<span>{title}</span>
 							</summary>
+							{/* //! Mapping over all the sidebar links data from the Constants data component  */}
 							{object.map((item) => (
 								<li className='text-base py-1' key={item.id}>
 									<Link to={item.path}>{item.label}</Link>

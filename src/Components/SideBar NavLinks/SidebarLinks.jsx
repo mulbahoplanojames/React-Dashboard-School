@@ -1,4 +1,4 @@
-import LinksDropdown from "../Links Drop Down/LinksDropdown";
+import LinksDropdown from "../SideBar Links Dropdown/LinksDropdown";
 
 //! Links data from the contsants data files
 import Holidays, {
