@@ -67,22 +67,72 @@ const Holidays = [
 
 export default Holidays;
 
-//! LineDate Data
+//! Line Chart Date Data
 export const lineChartData = {
-	labels: ["Jan", "Feb", "Mar", "Apr", "May", "Jun", "July"],
+	labels: ["Jan", "Feb", "Mar", "Apr", "May", "Jun", "July", "agu", "sep"],
 	id: "3",
 	datasets: [
 		{
 			label: "High",
-			data: [19, 40, 55, 40, 50, 55, 35],
-			borderColor: "rgba(75, 192, 192, 1)",
-			backgroundColor: "rgba(75, 192, 192, 0.2)",
+			data: [19, 15, 14, 24, 25, 19, 22, 24, 25],
+			borderColor: "rgb(103,58,183)",
+			barThickness: 40,
+			barPercentage: 1,
+			backgroundColor: "rgb(103,58,183)",
+		},
+		{
+			label: "Middle",
+			data: [10, 11, 22, 18, 31, 13, 26, 16, 31],
+			borderColor: "rgb(233,30,99)",
+			barThickness: 40,
+			barPercentage: 1,
+			backgroundColor: "rgb(233,30,99)",
 		},
 		{
 			label: "Low",
-			data: [7, 65, 35, 30, 64, 25, 55],
-			borderColor: "rgba(240, 192, 192, 192)",
-			backgroundColor: "rgba(75, 192, 192, 0.2)",
+			data: [7, 9, 16, 13, 25, 8, 20, 12, 27],
+			borderColor: "rgb(87,165,255)",
+			backgroundColor: "rgb(87,165,255)",
+			barThickness: 40,
+			barPercentage: 1,
+		},
+	],
+};
+
+//! Bar Chart Data
+export const barData = {
+	labels: [
+		"January",
+		"February",
+		"March",
+		"April",
+		"May",
+		"June",
+		"July",
+		"august",
+	],
+	id: "1",
+	datasets: [
+		{
+			label: "My Cash Spend Per Month",
+			data: [165, 259, 80, 121, 96, 85, 240, 134],
+			borderColor: "rgb(75, 12, 19)",
+			backgroundColor: "rgb(75, 192, 19)",
+			tension: 0.1,
+		},
+		{
+			label: "My Girlfriend Cash Spend Per Month",
+			data: [345, 359, 230, 181, 256, 55, 410, 344],
+			borderColor: "rgb(75, 12, 19)",
+			backgroundColor: "rgb(75, 192, 192)",
+			tension: 0.1,
+		},
+		{
+			label: "Our Son Cash Spend Per Month",
+			data: [445, 412, 325, 481, 356, 255, 510, 544],
+			borderColor: "rgb(75, 12, 19)",
+			backgroundColor: "rgb(75, 19, 192)",
+			tension: 0.1,
 		},
 	],
 };
