@@ -4,42 +4,40 @@
  * or render Teachers Informations or details in a tabular form
  */
 
-import TableRow from "./Table_Data/TableRow";
-import { teachersDataOne } from "../../../Data/Data";
+import { newStudentstableDataOne } from "../../../Data/Data";
+import TableRowTwo from "../Teacher_Table_One/Table_Data/TableRowTwo";
 
-const TeachersTableOne = () => {
+const NewStudentTableOne = () => {
 	return (
 		<>
 			<div className='overflow-x-auto flex-1 bg-white rounded-2xl'>
 				<p className='px-6 py-3 text-2xl border-dotted border-b-4'>
-					Teacher List
+					New Students List
 				</p>
 				<table className='table'>
 					{/* head */}
 					<thead className='text-lg'>
 						<tr>
-							<th>#</th>
+							<th>No</th>
 							<th>Name</th>
-							<th>Department</th>
-							<th>Email</th>
-							<th>Class Name</th>
-							<th>Subject</th>
-							<th>Rating</th>
+							<th>Assigned Professor</th>
+							<th>Date Of Admit</th>
+							<th>Fees</th>
+							<th>Branch</th>
 						</tr>
 					</thead>
 					<tbody>
 						{/* row 1 */}
 
-						{teachersDataOne.map((data) => (
-							<TableRow
+						{newStudentstableDataOne.map((data) => (
+							<TableRowTwo
 								key={data.id}
-								avatar={data.avater}
+								number={data.number}
 								name={data.name}
-								department={data.department}
-								email={data.email}
-								classname={data.classname}
-								subject={data.subject}
-								rating={data.rating}
+								assignedprofessor={data.assignedprofessor}
+								dateofadmit={data.dateofadmit}
+								fees={data.fees}
+								branch={data.brance}
 							/>
 						))}
 					</tbody>
@@ -49,4 +47,4 @@ const TeachersTableOne = () => {
 	);
 };
 
-export default TeachersTableOne;
+export default NewStudentTableOne;

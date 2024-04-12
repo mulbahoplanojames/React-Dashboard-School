@@ -4,7 +4,7 @@
  * or render Teachers Datas obtain form the Data component  in side of the table role.
  */
 
-const TableData = (props) => {
+const TableRow = (props) => {
 	const { avatar, name, department, email, classname, subject, rating } = props;
 
 	return (
@@ -42,4 +42,4 @@ const TableData = (props) => {
 	);
 };
 
-export default TableData;
+export default TableRow;

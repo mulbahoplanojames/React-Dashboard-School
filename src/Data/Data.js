@@ -242,3 +242,93 @@ export const teachersDataOne = [
 		rating: "4.2",
 	},
 ];
+
+/*
+ * ===============================================================================
+ * New Students List Table Data,this data is use with in the Dashboard One Component to display
+ * all the data or informations about the New Students
+ */
+
+export const newStudentstableDataOne = [
+	{
+		id: 1,
+		number: "1",
+		name: "	Jens Brincker",
+		assignedprofessor: "Kenny Josh",
+		dateofadmit: "27/05/2016",
+		brance: "Commerce",
+		fees: "Paid",
+	},
+	{
+		id: 2,
+		number: "2",
+		name: "Mark Hay",
+		assignedprofessor: "Mark",
+		dateofadmit: "26/05/2017",
+		brance: "Mechanical",
+		fees: "Unpaid",
+	},
+	{
+		id: 3,
+		number: "3",
+		name: "	Anthony Davie",
+		assignedprofessor: "Cinnabar",
+		dateofadmit: "21/05/2016",
+		brance: "Science",
+		fees: "Paid",
+	},
+	{
+		id: 4,
+		number: "4",
+		name: "David Perry",
+		assignedprofessor: "Felix",
+		dateofadmit: "20/04/2016",
+		brance: "Commerce",
+		fees: "Unpaid",
+	},
+	{
+		id: 5,
+		number: "5",
+		name: "Anthony Davie",
+		assignedprofessor: "Beryl",
+		dateofadmit: "24/05/2016",
+		brance: "Mechanical",
+		fees: "Paid",
+	},
+	{
+		id: 6,
+		number: "6",
+		name: "Alan Gilchrist",
+		assignedprofessor: "Joshep",
+		dateofadmit: "22/05/2016",
+		brance: "M.B.A.",
+		fees: "Unpaid",
+	},
+	{
+		id: 7,
+		number: "7",
+		name: "Emily Wilson",
+		assignedprofessor: "Sharma",
+		dateofadmit: "18/06/2016",
+		brance: "Science",
+		fees: "Paid",
+	},
+	{
+		id: 8,
+		number: "8",
+		name: "Alice Johnson",
+		assignedprofessor: "Jayesh",
+		dateofadmit: "17/05/2016",
+		brance: "Commerce",
+		fees: "Unpaid",
+	},
+	{
+		id: 9,
+		number: "9",
+		name: "Jane Smith",
+		assignedprofessor: "Mathematics",
+		dateofadmit: "17/05/2016",
+		brance: "Mechanical",
+		fees: "paid",
+	},
+];
