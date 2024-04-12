@@ -14,12 +14,12 @@ import { Outlet } from "react-router-dom";
 const Layout = () => {
 	return (
 		<>
-			<section className='w-screen h-screen flex'>
+			<section className='w-screen h-screen flex flex-row'>
 				<Sidebar />
 				{/* //! Navbar and the Outlets which represent the other components in a one div  */}
-				<div className='w-full'>
+				<div className='w-full overflow-y-scroll relative'>
 					<Navbar />
-					<div className=''>{<Outlet />}</div>
+					<div className='mt-[4.5rem]'>{<Outlet />}</div>
 				</div>
 			</section>
 		</>

@@ -66,3 +66,23 @@ const Holidays = [
 ];
 
 export default Holidays;
+
+//! LineDate Data
+export const lineChartData = {
+	labels: ["Jan", "Feb", "Mar", "Apr", "May", "Jun", "July"],
+	id: "3",
+	datasets: [
+		{
+			label: "High",
+			data: [19, 40, 55, 40, 50, 55, 35],
+			borderColor: "rgba(75, 192, 192, 1)",
+			backgroundColor: "rgba(75, 192, 192, 0.2)",
+		},
+		{
+			label: "Low",
+			data: [7, 65, 35, 30, 64, 25, 55],
+			borderColor: "rgba(240, 192, 192, 192)",
+			backgroundColor: "rgba(75, 192, 192, 0.2)",
+		},
+	],
+};

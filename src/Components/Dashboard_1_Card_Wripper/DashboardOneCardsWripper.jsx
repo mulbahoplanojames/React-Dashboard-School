@@ -10,7 +10,7 @@ import cardOneData from "../../Constants/Constants";
 const DashboardOneCardsWripper = () => {
 	return (
 		<>
-			<div className='grid lg:grid-cols-4 md:grid-cols-2 grid-cols-1 gap-x-4 gap-y-6 place-items-center mb-6'>
+			<div className='grid lg:grid-cols-4 md:grid-cols-2 grid-cols-1 lg:gap-x-12 gap-x-4 gap-y-6 place-items-center mb-10'>
 				{cardOneData.map((item) => (
 					<CardOne
 						key={item.id}
