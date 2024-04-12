@@ -29,7 +29,7 @@ const LineChart = () => {
 
 	return (
 		<>
-			<div className='w-[545px] h-[530px] rounded-xl shadow-2xl  bg-white overflow-hidden'>
+			<div className='w-[520px] h-[530px] rounded-xl shadow-2xl  bg-white overflow-hidden'>
 				<Line options={options} data={lineChartData} />
 			</div>
 		</>

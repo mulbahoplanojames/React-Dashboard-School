@@ -100,38 +100,29 @@ export const lineChartData = {
 };
 
 //! Bar Chart Data
-export const barData = {
-	labels: [
-		"January",
-		"February",
-		"March",
-		"April",
-		"May",
-		"June",
-		"July",
-		"august",
-	],
+export const barChartData = {
+	labels: ["Jan", "Feb", "Mar", "Apr", "May", "Jun", "July", "aug", "sep"],
 	id: "1",
 	datasets: [
 		{
-			label: "My Cash Spend Per Month",
-			data: [165, 259, 80, 121, 96, 85, 240, 134],
-			borderColor: "rgb(75, 12, 19)",
-			backgroundColor: "rgb(75, 192, 19)",
+			label: "Net Profit",
+			data: [345, 359, 230, 181, 256, 55, 410, 344, 300],
+			borderColor: "rgb(87,165,255)",
+			backgroundColor: "rgb(87,165,255)",
 			tension: 0.1,
 		},
 		{
-			label: "My Girlfriend Cash Spend Per Month",
-			data: [345, 359, 230, 181, 256, 55, 410, 344],
-			borderColor: "rgb(75, 12, 19)",
-			backgroundColor: "rgb(75, 192, 192)",
+			label: "Revenue",
+			data: [445, 412, 325, 481, 356, 255, 510, 544, 600],
+			borderColor: "rgb(0,227,150)",
+			backgroundColor: "rgb(0,227,150)",
 			tension: 0.1,
 		},
 		{
-			label: "Our Son Cash Spend Per Month",
-			data: [445, 412, 325, 481, 356, 255, 510, 544],
-			borderColor: "rgb(75, 12, 19)",
-			backgroundColor: "rgb(75, 19, 192)",
+			label: "Free Cash Flow",
+			data: [165, 259, 80, 121, 96, 85, 240, 134, 90],
+			borderColor: "rgb(255,116,0)",
+			backgroundColor: "rgb(255,116,0)",
 			tension: 0.1,
 		},
 	],
