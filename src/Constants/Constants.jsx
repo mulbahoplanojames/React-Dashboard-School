@@ -115,6 +115,7 @@ const cardOneData = [
 		number: "450",
 		percentage: "45% increas...",
 		color: " #4ddec1",
+		value: "45",
 		icon: <LuUsers className='text-4xl' />,
 	},
 	{
@@ -123,6 +124,7 @@ const cardOneData = [
 		number: "157",
 		percentage: "40% increas...",
 		color: "#ffc269",
+		value: "40",
 		icon: <LuUser className='text-4xl' />,
 	},
 	{
@@ -131,6 +133,7 @@ const cardOneData = [
 		number: "52",
 		percentage: "85% increas...",
 		color: "#ff6982",
+		value: "85",
 		icon: <FiBook className='text-4xl' />,
 	},
 	{
@@ -139,6 +142,7 @@ const cardOneData = [
 		number: "13,921$",
 		percentage: "50% increas...",
 		color: "#57a5ff",
+		value: "50",
 		icon: <HiMiniCurrencyDollar className='text-4xl' />,
 	},
 ];

@@ -6,7 +6,7 @@
 
 const CardOne = (props) => {
 	// Object Destructing of props
-	const { label, number, percentage, icon, color } = props;
+	const { label, number, percentage, icon, color, value } = props;
 
 	return (
 		<>
@@ -21,8 +21,8 @@ const CardOne = (props) => {
 					<p className='text-xl  pb-2'>{label}</p>
 					<p className='text-2xl pb-2'>{number}</p>
 					<progress
-						className='progress neutral-content w-32'
-						value='90'
+						className='progress w-32'
+						value={value}
 						max='100'
 					></progress>
 
