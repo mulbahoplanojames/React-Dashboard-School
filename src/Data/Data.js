@@ -67,7 +67,12 @@ const Holidays = [
 
 export default Holidays;
 
-//! Line Chart Date Data
+/*
+ * ===============================================================================
+ * Line Chart Date Data,this data is use with in the LineChart Component to display
+ * all the data for the chart
+ */
+
 export const lineChartData = {
 	labels: ["Jan", "Feb", "Mar", "Apr", "May", "Jun", "July", "agu", "sep"],
 	id: "3",
@@ -98,8 +103,12 @@ export const lineChartData = {
 		},
 	],
 };
+/*
+ * ===============================================================================
+ * Bar Chart Date Data,this data is use with in the BarChart Component to display
+ * all the data for the chart
+ */
 
-//! Bar Chart Data
 export const barChartData = {
 	labels: ["Jan", "Feb", "Mar", "Apr", "May", "Jun", "July", "aug", "sep"],
 	id: "1",
@@ -127,3 +136,85 @@ export const barChartData = {
 		},
 	],
 };
+
+/*
+ * ===============================================================================
+ * Teachers List Table Data,this data is use with in the Teachers Table One Component to display
+ * all the data or informations about the Teachers
+ */
+
+import avatar1 from "/src/assets/user1.jpg";
+import avatar2 from "/src/assets/user2.jpg";
+import avatar3 from "/src/assets/user3.jpg";
+import avatar4 from "/src/assets/user4.jpg";
+import avatar5 from "/src/assets/user5.jpg";
+import avatar6 from "/src/assets/user6.jpg";
+
+export const teachersDataOne = [
+	{
+		id: 1,
+		avater: avatar1,
+		Name: "John Doe",
+		Department: "Science",
+		Email: "xyz@email.com",
+		ClassName: "Class A",
+		Subject: "Biology",
+		Rating: "",
+		Action: "",
+	},
+	{
+		id: 2,
+		avater: avatar2,
+		Name: "Jane Smith",
+		Department: "Mathematics",
+		Email: "jane@email.com",
+		ClassName: "Class B",
+		Subject: "Algebra",
+		Rating: "",
+		Action: "",
+	},
+	{
+		id: 3,
+		avater: avatar3,
+		Name: "Alice Johnson",
+		Department: "English",
+		Email: "alice@email.com",
+		ClassName: "Class C",
+		Subject: "Literature",
+		Rating: "",
+		Action: "",
+	},
+	{
+		id: 4,
+		avater: avatar4,
+		Name: "David Brown",
+		Department: "History",
+		Email: "david@email.com",
+		ClassName: "Class D",
+		Subject: "World History",
+		Rating: "",
+		Action: "",
+	},
+	{
+		id: 5,
+		avater: avatar5,
+		Name: "Emily Wilson",
+		Department: "Art",
+		Email: "emily@email.com",
+		ClassName: "Class E",
+		Subject: "Painting",
+		Rating: "",
+		Action: "",
+	},
+	{
+		id: 6,
+		avater: avatar6,
+		Name: "Michael Lee",
+		Department: "Physical Education",
+		Email: "michael@email.com",
+		ClassName: "Class F",
+		Subject: "Basketball",
+		Rating: "",
+		Action: "",
+	},
+];
