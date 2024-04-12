@@ -14,7 +14,17 @@ const DashboardOne = () => {
 				<LineChart />
 				<BarChart />
 			</div>
-			<TeachersTableOne />
+			<div className='flex gap-6 flex-wrap'>
+				<TeachersTableOne />
+				<div className='w-60 h-[540px] bg-white shadow-lg rounded-lg p-6 overflow-hidden'>
+					<p className='text-2xl font-bold pb-5'>Student Performance</p>
+					<p className='text-lg pb-2'> Overall Growth</p>
+					<p className='text-lg font-bold'>38.80%</p>
+					<div className='overflow-hidden object-cover'>
+						<BarChart />
+					</div>{" "}
+				</div>
+			</div>
 		</div>
 	);
 };

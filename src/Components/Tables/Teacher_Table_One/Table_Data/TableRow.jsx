@@ -4,41 +4,42 @@
  * or render Teachers Datas obtain form the Data component  in side of the table role.
  */
 
-import { teachersDataOne } from "../../../../Data/Data";
+const TableData = (props) => {
+	const { avatar, name, department, email, classname, subject, rating } = props;
 
-const TableRow = () => {
 	return (
 		<>
-			{teachersDataOne.map((data) => (
-				<tr key={data.id}>
-					<td>
-						<div className='flex items-center gap-3'>
-							<div className='avatar'>
-								<div className='mask mask-squircle w-12 h-12'>
-									<img
-										src='/tailwind-css-component-profile-2@56w.png'
-										alt='Avatar Tailwind CSS Component'
-									/>
-								</div>
-							</div>
-							<div>
-								<div className='font-bold'>Hart Hagerty</div>
-								<div className='text-sm opacity-50'>United States</div>
-							</div>
+			<tr className='hover:bg-slate-200'>
+				<td>
+					<div className='avatar'>
+						<div className='mask mask-squircle w-10 h-10'>
+							<img src={avatar} alt={avatar} />
 						</div>
-					</td>
-					<td>
-						Zemlak, Daniel and Leannon
-						<br />
-						<span className='badge badge-ghost badge-sm'>
-							Desktop Support Technician
-						</span>
-					</td>
-					<td>Purple</td>
-				</tr>
-			))}
+					</div>
+				</td>
+				<td>
+					<div>
+						<p className='text-base'>{name}</p>
+					</div>
+				</td>
+				<td>
+					<span className='text-base'>{department}</span>
+				</td>
+				<td>
+					<p className='text-base'>{email}</p>
+				</td>
+				<td>
+					<p className='text-base'>{classname}</p>
+				</td>
+				<td>
+					<p className='text-base'>{subject}</p>
+				</td>
+				<td>
+					<p className='text-base'>{rating}</p>
+				</td>
+			</tr>
 		</>
 	);
 };
 
-export default TableRow;
+export default TableData;
