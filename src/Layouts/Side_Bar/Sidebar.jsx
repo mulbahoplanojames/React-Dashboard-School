@@ -19,7 +19,7 @@ const Sidebar = () => {
 		<>
 			<div className='w-[327px] flex flex-col  overflow-y-scroll sm:block hidden'>
 				{/* // Logo */}
-				<div className='flex items-center justify-center gap-3 bg-blue-600 py-4 cursor-pointer mb-8'>
+				<div className='flex items-center justify-center gap-3 bg-2 py-4 cursor-pointer mb-8'>
 					<RiSchoolFill className='text-4xl text-white' />
 					<h1 className='text-3xl text-white'>Dev!Tech</h1>
 				</div>

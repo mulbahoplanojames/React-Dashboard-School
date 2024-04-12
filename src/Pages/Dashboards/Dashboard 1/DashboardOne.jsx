@@ -8,7 +8,8 @@ const DashboardOne = () => {
 			{/* Dashboard HeaderTitle and a link to to go back to the home page  */}
 			<DashboardOneHeader />
 			<DashboardOneCardsWripper />
-			<div className=''>
+			<div className='flex items-center flex-wrap gap-8'>
+				<LineChart />
 				<LineChart />
 			</div>
 		</div>
