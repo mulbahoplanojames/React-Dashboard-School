@@ -365,3 +365,76 @@ export const newStudentstableDataOne = [
 		fees: "paid",
 	},
 ];
+
+/*
+ * ===============================================================================
+ * Students Sport List Table Data,this data is use with in the SportTable Component to display
+ * all the data or informations about the Students Sports
+ */
+
+export const studentSportData = [
+	{
+		id: 1,
+		Studentname: "John Doe",
+		AssignedCoach: "Alice Smith",
+		Date: "2024-04-13",
+		Time: "10:00 AM",
+		Actions: "Review assignment",
+	},
+	{
+		id: 2,
+		Studentname: "Jane Smith",
+		AssignedCoach: "Bob Johnson",
+		Date: "2024-04-14",
+		Time: "2:30 PM",
+		Actions: "Practice presentation",
+	},
+	{
+		id: 3,
+		Studentname: "Alex Johnson",
+		AssignedCoach: "Emily Brown",
+		Date: "2024-04-15",
+		Time: "11:15 AM",
+		Actions: "Discuss project ideas",
+	},
+	{
+		id: 4,
+		Studentname: "Michael Brown",
+		AssignedCoach: "David Wilson",
+		Date: "2024-04-16",
+		Time: "9:00 AM",
+		Actions: "Prepare for exam",
+	},
+	{
+		id: 5,
+		Studentname: "Emily Davis",
+		AssignedCoach: "Sarah Clark",
+		Date: "2024-04-17",
+		Time: "3:45 PM",
+		Actions: "Mock interview",
+	},
+	{
+		id: 6,
+		Studentname: "Adam Lee",
+		AssignedCoach: "Grace Martinez",
+		Date: "2024-04-18",
+		Time: "1:30 PM",
+		Actions: "Resume review",
+	},
+	{
+		id: 7,
+		Studentname: "Sophia Garcia",
+		AssignedCoach: "James Rodriguez",
+		Date: "2024-04-19",
+		Time: "10:45 AM",
+		Actions: "Career guidance",
+	},
+	{
+		id: 8,
+		Studentname: "Ethan Wilson",
+		AssignedCoach: "Olivia Taylor",
+		Date: "2024-04-20",
+		Time: "4:00 PM",
+		Actions: "Goal setting",
+	},
+];

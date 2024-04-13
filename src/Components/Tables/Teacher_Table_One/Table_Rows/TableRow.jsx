@@ -1,6 +1,6 @@
 /*
  * ===========================================================================================
- * This component TableData is use with in the TeachersTableOne omponent to display
+ * This component TableRow is use with in the TeachersTableOne omponent to display
  * or render Teachers Datas obtain form the Data component  in side of the table role.
  */
 

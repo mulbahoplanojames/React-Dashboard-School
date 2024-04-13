@@ -5,7 +5,7 @@
  */
 
 import { newStudentstableDataOne } from "../../../Data/Data";
-import TableRowTwo from "../Teacher_Table_One/Table_Data/TableRowTwo";
+import TableRowTwo from "../Teacher_Table_One/Table_Rows/TableRowTwo";
 
 const NewStudentTableOne = () => {
 	return (
