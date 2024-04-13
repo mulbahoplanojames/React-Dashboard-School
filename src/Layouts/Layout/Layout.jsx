@@ -10,6 +10,7 @@
 import Navbar from "../NavBar/Navbar";
 import Sidebar from "../Side_Bar/Sidebar";
 import { Outlet } from "react-router-dom";
+import Footer from "./Footer/Footer";
 
 const Layout = () => {
 	return (
@@ -20,6 +21,7 @@ const Layout = () => {
 				<div className='w-full overflow-y-scroll relative'>
 					<Navbar />
 					<div className='mt-[4.5rem]'>{<Outlet />}</div>
+					{/* <Footer /> */}
 				</div>
 			</section>
 		</>

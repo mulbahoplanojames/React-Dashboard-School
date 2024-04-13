@@ -1,9 +1,10 @@
+import DashboardOneHeader from "../../../Components/Dashboard_1_Header/DashboardOneHeader";
+
 const DashboardThree = () => {
 	return (
 		<>
-			<div className='bg-blue-800'>
-				<p>Dashboard Three</p>
-				<a href='dashboard2'>To Dashdoard Two</a>
+			<div className='py-10 md:px-5 px-3 bg-1 '>
+				<DashboardOneHeader />
 			</div>
 		</>
 	);
