@@ -101,7 +101,8 @@ export const NotificationsData = [
 
 /*
  * ===============================================================================
- * Data informations that's use with in each cards in the DashboardOneCardsWripper
+ * Card One
+ * Data informations that's use with in each cards of CardOne in the DashboardOneCardsWripper
  * This helpp to inmprove effeciency
  */
 import { LuUsers, LuUser } from "react-icons/lu";
@@ -128,7 +129,7 @@ const cardOneData = [
 		icon: <LuUser className='text-4xl' />,
 	},
 	{
-		id: 1,
+		id: 3,
 		label: "Total Courses",
 		number: "52",
 		percentage: "85% increas...",
@@ -137,9 +138,9 @@ const cardOneData = [
 		icon: <FiBook className='text-4xl' />,
 	},
 	{
-		id: 1,
+		id: 4,
 		label: "Fees Collectio...",
-		number: "13,921$",
+		number: "13,921",
 		percentage: "50% increas...",
 		color: "#57a5ff",
 		value: "50",
@@ -147,3 +148,44 @@ const cardOneData = [
 	},
 ];
 export default cardOneData;
+
+/*
+ * ===============================================================================
+ * Card Two
+ * Data informations that's use with in each cards of CardTwo in the DashboardOneCardsWripper
+ * This helpp to inmprove effeciency
+ */
+import { FaUsers, FaUser } from "react-icons/fa";
+import { MdOutlineTrendingUp } from "react-icons/md";
+import { BsCupFill } from "react-icons/bs";
+
+export const cardTwoData = [
+	{
+		id: 1,
+		label: "Total Staden...",
+		number: "4,586",
+		percentage: "10.32%",
+		icon: <FaUsers className='text-4xl text-orange-400' />,
+	},
+	{
+		id: 2,
+		label: "New Studen..",
+		number: "323",
+		percentage: "21.19%",
+		icon: <FaUser className='text-4xl text-[#00e396]' />,
+	},
+	{
+		id: 3,
+		label: "Total Courses",
+		number: "103",
+		percentage: "10.64%",
+		icon: <FiBook className='text-4xl' />,
+	},
+	{
+		id: 4,
+		label: "Visitors",
+		number: "2,352",
+		percentage: "4.27%",
+		icon: <BsCupFill className='text-4xl' />,
+	},
+];
