@@ -155,8 +155,7 @@ export default cardOneData;
  * Data informations that's use with in each cards of CardTwo in the DashboardOneCardsWripper
  * This helpp to inmprove effeciency
  */
-import { FaUsers, FaUser } from "react-icons/fa";
-import { MdOutlineTrendingUp } from "react-icons/md";
+import { FaUsers, FaUser, FaBook } from "react-icons/fa";
 import { BsCupFill } from "react-icons/bs";
 
 export const cardTwoData = [
@@ -178,14 +177,14 @@ export const cardTwoData = [
 		id: 3,
 		label: "Total Courses",
 		number: "103",
-		percentage: "10.64%",
-		icon: <FiBook className='text-4xl' />,
+		percentage: "17.64%",
+		icon: <FaBook className='text-4xl text-[#673ab7]' />,
 	},
 	{
 		id: 4,
 		label: "Visitors",
 		number: "2,352",
-		percentage: "4.27%",
-		icon: <BsCupFill className='text-4xl' />,
+		percentage: "19.27%",
+		icon: <BsCupFill className='text-4xl text-[#e83e8c]' />,
 	},
 ];

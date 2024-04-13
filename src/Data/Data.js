@@ -69,7 +69,7 @@ export default Holidays;
 
 /*
  * ===============================================================================
- * Line Chart Date Data,this data is use with in the LineChart Component to display
+ * Line Chart Data,this data is use with in the LineChart Component to display
  * all the data for the chart
  */
 
@@ -105,7 +105,7 @@ export const lineChartData = {
 };
 /*
  * ===============================================================================
- * Bar Chart Date Data,this data is use with in the BarChart Component to display
+ * Bar Chart Data,this data is use with in the BarChart Component to display
  * all the data for the chart
  */
 
@@ -133,6 +133,39 @@ export const barChartData = {
 			borderColor: "rgb(255,116,0)",
 			backgroundColor: "rgb(255,116,0)",
 			tension: 0.1,
+		},
+	],
+};
+
+/*
+ * ===============================================================================
+ * Pie Chart Data,this data is use with in the PieChart Component to display
+ * all the data for the chart
+ */
+
+export const pieChartData = {
+	labels: ["Liberai", "Ghana", "Rwanda", "South Sudan", "Nigeria", "Egpty"],
+	id: "2",
+	datasets: [
+		{
+			label: "My Living Expense in RWF",
+			data: [4500, 2100, 1500, 1500, 1900, 3400],
+			backgroundColor: [
+				"#FF6384",
+				"#36A2EB",
+				"#FFCE56",
+				"#FFCEf6",
+				"#FFAE56",
+				"#b48484",
+			],
+			hoverBackgroundColor: [
+				"#FF6384",
+				"#36A2EB",
+				"#FFCE56",
+				"#FFCEf6",
+				"#FFAE56",
+				"#b48484",
+			],
 		},
 	],
 };

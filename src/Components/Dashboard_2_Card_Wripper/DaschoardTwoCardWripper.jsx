@@ -4,7 +4,7 @@ import CardTwo from "../Cards/Card_Two/CardTwo";
 const DaschoardTwoCardWripper = () => {
 	return (
 		<>
-			<div className='flex flex-wrap w-[40%] items-center  gap-x-6 gap-y-10 px-1 bg-red-500'>
+			<div className='flex flex-wrap w-[40%] items-center  gap-x-6 gap-y-10 px-1'>
 				{cardTwoData.map((data) => (
 					<CardTwo
 						key={data.icon}
