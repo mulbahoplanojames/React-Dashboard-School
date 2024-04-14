@@ -25,7 +25,7 @@ const PieChart = () => {
 
 	return (
 		<>
-			<div className='w-[600px] h-[400px] md:flex-1 rounded-md shadow-2xl  bg-white overflow-hidden'>
+			<div className='w-full h-full md:flex-1 rounded-md shadow-2xl  bg-white overflow-hidden'>
 				<Pie data={pieChartData} options={options} />
 			</div>
 		</>

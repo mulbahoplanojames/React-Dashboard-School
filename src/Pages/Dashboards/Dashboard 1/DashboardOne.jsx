@@ -13,8 +13,12 @@ const DashboardOne = () => {
 			<DashboardOneCardsWripper />
 			{/* // Line Cart and Bar Chart */}
 			<div className='flex items-center flex-wrap gap-12 mb-14'>
-				<LineChart />
-				<BarChart />
+				<div className='w-[520px] h-[530px]'>
+					<LineChart />
+				</div>
+				<div className='w-[560px] h-[530px] '>
+					<BarChart />
+				</div>{" "}
 			</div>
 			{/* // NTeachers Table and Bar Chart */}
 			<div className='flex gap-6 flex-wrap mb-14'>

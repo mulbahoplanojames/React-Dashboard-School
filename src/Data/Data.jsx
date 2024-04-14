@@ -371,6 +371,8 @@ export const newStudentstableDataOne = [
  * Students Sport List Table Data,this data is use with in the SportTable Component to display
  * all the data or informations about the Students Sports
  */
+//! Button
+import ButtonTwo from "../Interfaces/Button_Two/ButtonTwo";
 
 export const studentSportData = [
 	{
@@ -379,7 +381,7 @@ export const studentSportData = [
 		AssignedCoach: "Alice Smith",
 		Date: "2024-04-13",
 		Time: "10:00 AM",
-		Actions: "Review assignment",
+		Actions: <ButtonTwo color={"#ffa42d"} />,
 	},
 	{
 		id: 2,
@@ -387,7 +389,7 @@ export const studentSportData = [
 		AssignedCoach: "Bob Johnson",
 		Date: "2024-04-14",
 		Time: "2:30 PM",
-		Actions: "Practice presentation",
+		Actions: <ButtonTwo color={"#3abaf4"} />,
 	},
 	{
 		id: 3,
@@ -395,7 +397,7 @@ export const studentSportData = [
 		AssignedCoach: "Emily Brown",
 		Date: "2024-04-15",
 		Time: "11:15 AM",
-		Actions: "Discuss project ideas",
+		Actions: <ButtonTwo color={"#54ca68"} />,
 	},
 	{
 		id: 4,
@@ -403,7 +405,7 @@ export const studentSportData = [
 		AssignedCoach: "David Wilson",
 		Date: "2024-04-16",
 		Time: "9:00 AM",
-		Actions: "Prepare for exam",
+		Actions: <ButtonTwo color={"#673ab7"} />,
 	},
 	{
 		id: 5,
@@ -411,7 +413,7 @@ export const studentSportData = [
 		AssignedCoach: "Sarah Clark",
 		Date: "2024-04-17",
 		Time: "3:45 PM",
-		Actions: "Mock interview",
+		Actions: <ButtonTwo color={"#e83e8c"} />,
 	},
 	{
 		id: 6,
@@ -419,7 +421,7 @@ export const studentSportData = [
 		AssignedCoach: "Grace Martinez",
 		Date: "2024-04-18",
 		Time: "1:30 PM",
-		Actions: "Resume review",
+		Actions: <ButtonTwo color={"#222c3c"} />,
 	},
 	{
 		id: 7,
@@ -427,7 +429,7 @@ export const studentSportData = [
 		AssignedCoach: "James Rodriguez",
 		Date: "2024-04-19",
 		Time: "10:45 AM",
-		Actions: "Career guidance",
+		Actions: <ButtonTwo color={"#4ddec1"} />,
 	},
 	{
 		id: 8,
@@ -435,6 +437,6 @@ export const studentSportData = [
 		AssignedCoach: "Olivia Taylor",
 		Date: "2024-04-20",
 		Time: "4:00 PM",
-		Actions: "Goal setting",
+		Actions: <ButtonTwo color={"#57a5ff"} />,
 	},
 ];

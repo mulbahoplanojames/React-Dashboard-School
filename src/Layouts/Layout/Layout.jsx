@@ -21,7 +21,7 @@ const Layout = () => {
 				<div className='w-full overflow-y-scroll relative'>
 					<Navbar />
 					<div className='mt-[4.5rem]'>{<Outlet />}</div>
-					{/* <Footer /> */}
+					<Footer />
 				</div>
 			</section>
 		</>

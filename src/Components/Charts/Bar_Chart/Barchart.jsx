@@ -28,7 +28,7 @@ const BarChart = () => {
 
 	return (
 		<>
-			<div className='w-[560px] h-[530px] rounded-xl shadow-2xl  bg-white overflow-hidden'>
+			<div className='w-full h-full rounded-xl shadow-2xl  bg-white overflow-hidden'>
 				<Bar data={barChartData} options={oprions} />
 			</div>
 		</>
