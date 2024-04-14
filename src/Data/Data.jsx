@@ -458,8 +458,8 @@ export const professorsList = [
 	{
 		id: 2,
 		name: "John Deo-(md.com, PHD)",
-		status: "Available",
-		color: "green",
+		status: "On Leave",
+		color: "blue",
 		avatar: avatar2,
 	},
 	{
