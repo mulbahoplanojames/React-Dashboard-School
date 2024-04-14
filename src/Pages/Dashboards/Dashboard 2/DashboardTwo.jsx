@@ -5,6 +5,7 @@ import DashboardOneHeader from "../../../Components/Dashboard_1_Header/Dashboard
 import DaschoardTwoCardWripper from "../../../Components/Dashboard_2_Card_Wripper/DaschoardTwoCardWripper";
 import SportTable from "../../../Components/Tables/Sport_Table/SportTable";
 import TeachersTableOne from "../../../Components/Tables/Teacher_Table_One/TeachersTableOne";
+import TeacherList from "../../../Components/Teacher_Lists/TeacherList";
 
 const DashboardTwo = () => {
 	return (
@@ -17,8 +18,9 @@ const DashboardTwo = () => {
 				</div>
 			</div>
 			{/* //! Sports Table  */}
-			<div className='mb-14'>
+			<div className='mb-14 flex gap-10'>
 				<SportTable />
+				<TeacherList />
 			</div>
 			{/* //! Charts */}
 			<div className='flex gap-8 items-center flex-wrap mb-14'>

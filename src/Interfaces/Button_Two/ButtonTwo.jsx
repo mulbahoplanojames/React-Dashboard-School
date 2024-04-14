@@ -1,11 +1,11 @@
 /*
  * ===========================================================================================
- * This component ButtonOne is use with in the SportTable Component to display
+ * This component ButtonTwo is use with in the SportTable Component to display
  * or render a dropdown for other functionalities
  */
 
 //! Icon
-import { MdKeyboardArrowDown, MdOutlineLocalPrintshop } from "react-icons/md";
+import { MdKeyboardArrowDown } from "react-icons/md";
 import { FaRegTrashAlt } from "react-icons/fa";
 import { FaRegClock } from "react-icons/fa6";
 import { GoCircleSlash } from "react-icons/go";
