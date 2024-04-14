@@ -440,3 +440,68 @@ export const studentSportData = [
 		Actions: <ButtonTwo color={"#57a5ff"} />,
 	},
 ];
+
+/*
+ * ===============================================================================
+ * Professors List Data,this data is use with in the teacherList Component to display
+ * all the data or informations about the Professiors
+ */
+
+export const professorsList = [
+	{
+		id: 1,
+		name: "John Koluya-(M.Com, PHD)	",
+		status: "Available",
+		color: "green",
+		avatar: avatar1,
+	},
+	{
+		id: 2,
+		name: "John Deo-(md.com, PHD)",
+		status: "Available",
+		color: "green",
+		avatar: avatar2,
+	},
+	{
+		id: 3,
+		name: "Michael Laue-(B.C.A., M.C.A.)",
+		status: "Available",
+		color: "green",
+		avatar: avatar3,
+	},
+	{
+		id: 4,
+		name: "Emily Matthew-(B.E., M.E.)",
+		status: "Not Available",
+		color: "Red",
+		avatar: avatar4,
+	},
+	{
+		id: 5,
+		name: "William Peter-(md.com, PHD)",
+		status: "On Leave",
+		color: "blue",
+		avatar: avatar5,
+	},
+	{
+		id: 6,
+		name: "Jacob Ryan-(M.S.W, PHD)",
+		status: "Not Available",
+		color: "Red",
+		avatar: avatar6,
+	},
+	{
+		id: 7,
+		name: "Emily Matthew-(B.E., M.E.)",
+		status: "Not Available",
+		color: "green",
+		avatar: avatar4,
+	},
+	{
+		id: 8,
+		name: "William Peter-(md.com, PHD)",
+		status: "On Leave",
+		color: "blue",
+		avatar: avatar3,
+	},
+];
