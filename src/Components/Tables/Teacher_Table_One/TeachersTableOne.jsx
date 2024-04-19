@@ -7,7 +7,12 @@
 import TableRow from "./Table_Rows/TableRow";
 import { teachersDataOne } from "../../../Data/Data";
 
+/*
+ * TeachersTableOne component
+ * The component that displays teachers information in a tabular form.
+ */
 const TeachersTableOne = () => {
+	// Return table component
 	return (
 		<>
 			<div className='overflow-x-auto flex-1 bg-white rounded-2xl'>
@@ -28,11 +33,14 @@ const TeachersTableOne = () => {
 						</tr>
 					</thead>
 					<tbody>
-						{/* row 1 */}
+						{/* row */}
 
+						{/* Map through teachersDataOne array */}
 						{teachersDataOne.map((data) => (
 							<TableRow
+								// Pass unique key prop to each TableRow
 								key={data.id}
+								// Pass props to TableRow component
 								avatar={data.avater}
 								name={data.name}
 								department={data.department}
