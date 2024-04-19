@@ -13,18 +13,26 @@ import { Outlet } from "react-router-dom";
 import Footer from "./Footer/Footer";
 
 const Layout = () => {
+	/*
+	 * This is the main layout component which holds the sidebar and navbar. This layout component
+	 * is used in the App.jsx component and only the outlets wihich is the other
+	 * components will be changing
+	 */
 	return (
-		<>
-			<section className='w-screen h-screen flex flex-row'>
-				<Sidebar />
-				{/* //! Navbar and the Outlets which represent the other components in a one div  */}
-				<div className='w-full overflow-y-scroll relative'>
-					<Navbar />
-					<div className='mt-[4.5rem]'>{<Outlet />}</div>
-					<Footer />
-				</div>
-			</section>
-		</>
+		// The section tag is used to make the sidebar and navbar a flex row
+		<section className='w-screen h-screen flex flex-row'>
+			<Sidebar />
+			{/* //! Navbar and the Outlets which represent the other components in a one div  */}
+			<div className='w-full overflow-y-scroll relative'>
+				<Navbar />
+				{/*the Outlet is a react-router-dom component which will be used to render the 
+				other components with in this site
+				 */}
+				<div className='mt-[4.5rem]'>{<Outlet />}</div>
+				{/* //! Footer component which is a fixed bottom with z-index of 100 so it will be on top of all other components */}
+				<Footer />
+			</div>
+		</section>
 	);
 };
 
