@@ -16,15 +16,15 @@ const Notifications = () => {
 				<div className='dropdown dropdown-end'>
 					<div tabIndex={0} role='button' className='btn btn-ghost btn-circle'>
 						<div className='indicator'>
-							<IoMdNotificationsOutline className='h-7 w-7' />
-							<span className='badge badge-sm indicator-item bg-orange-500 text-white'>
+							<IoMdNotificationsOutline className='h-6 w-6' />
+							<span className='badge badge-sm w-5 h-5 indicator-item bg-orange-500 text-white'>
 								9
 							</span>
 						</div>
 					</div>
 					<div
 						tabIndex={0}
-						className='mt-6 z-30 card card-compact dropdown-content w-[500px] bg-base-100 shadow'
+						className='mt-5 z-30 card card-compact dropdown-content  w-[350px] bg-base-100 shadow'
 					>
 						<div className='w-full h-80 z-40 overflow-y-scroll'>
 							{/* // Notification for incoming messages  */}

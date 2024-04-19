@@ -26,7 +26,7 @@ import { CiMail } from "react-icons/ci";
 const SidebarLinks = () => {
 	return (
 		<>
-			<div className='flex-1 mb-8'>
+			<div className='flex-1 mb-8 mx-3'>
 				<LinksDropdown
 					object={Dashboards}
 					title={"Dashboard"}

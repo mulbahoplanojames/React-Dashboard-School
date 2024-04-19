@@ -16,15 +16,15 @@ const Messages = () => {
 				<div className='dropdown dropdown-end'>
 					<div tabIndex={0} role='button' className='btn btn-ghost btn-circle'>
 						<div className='indicator'>
-							<AiOutlineMessage className='h-7 w-7' />
-							<span className='badge badge-sm indicator-item bg-blue-500 text-white'>
+							<AiOutlineMessage className='h-6 w-6' />
+							<span className='badge badge-sm indicator-item w-5 h-5 bg-blue-500 text-white'>
 								5
 							</span>
 						</div>
 					</div>
 					<div
 						tabIndex={0}
-						className='mt-6 z-30 card card-compact dropdown-content w-[500px] bg-base-100 shadow'
+						className='mt-4 z-30 card card-compact dropdown-content w-[350px] bg-base-100 shadow'
 					>
 						<div className='w-full h-80 z-40 overflow-y-scroll'>
 							{/* // Notification for incoming messages  */}

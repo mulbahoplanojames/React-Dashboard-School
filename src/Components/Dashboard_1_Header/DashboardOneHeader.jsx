@@ -11,17 +11,14 @@ const DashboardOneHeader = () => {
 	return (
 		<>
 			<div className='flex justify-between mb-8 items-center'>
-				<h1 className='md:text-3xl text-xl font-bold'>Dashboard</h1>
-				<div className='flex justify-center items-center gap-2 bg-neutral-100 md:py-4 py-2 md:px-5 px-3 rounded-full'>
+				<h1 className='md:text-2xl text-xl font-bold'>Dashboard</h1>
+				<div className='flex justify-center items-center gap-2 bg-neutral-100 md:py-3 py-2 md:px-5 px-3 rounded-full shadow-lg'>
 					<GrHomeRounded className='text-gray-400' />
-					<a
-						href=''
-						className='md:text-lg text-base text-gray-400 hover:text-blue-500'
-					>
+					<a href='' className='text-base text-gray-400 hover:text-blue-500'>
 						Home
 					</a>
 					<IoIosArrowForward className='text-gray-400' />
-					<span className='md:text-lg text-sm'>Dashboard</span>
+					<span className='text-base'>Dashboard</span>
 				</div>
 			</div>
 		</>

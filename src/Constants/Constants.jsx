@@ -117,7 +117,7 @@ const cardOneData = [
 		percentage: "45% increas...",
 		color: " #4ddec1",
 		value: "45",
-		icon: <LuUsers className='text-4xl' />,
+		icon: <LuUsers className='text-4xl text-white' />,
 	},
 	{
 		id: 2,
@@ -126,7 +126,7 @@ const cardOneData = [
 		percentage: "40% increas...",
 		color: "#ffc269",
 		value: "40",
-		icon: <LuUser className='text-4xl' />,
+		icon: <LuUser className='text-4xl text-white' />,
 	},
 	{
 		id: 3,
@@ -135,7 +135,7 @@ const cardOneData = [
 		percentage: "85% increas...",
 		color: "#ff6982",
 		value: "85",
-		icon: <FiBook className='text-4xl' />,
+		icon: <FiBook className='text-4xl text-white' />,
 	},
 	{
 		id: 4,
@@ -144,7 +144,7 @@ const cardOneData = [
 		percentage: "50% increas...",
 		color: "#57a5ff",
 		value: "50",
-		icon: <HiMiniCurrencyDollar className='text-4xl' />,
+		icon: <HiMiniCurrencyDollar className='text-4xl text-white' />,
 	},
 ];
 export default cardOneData;
@@ -171,20 +171,20 @@ export const cardTwoData = [
 		label: "New Studen..",
 		number: "323",
 		percentage: "21.19%",
-		icon: <FaUser className='text-4xl text-[#00e396]' />,
+		icon: <FaUser className='text-4xl  text-[#00e396]' />,
 	},
 	{
 		id: 3,
 		label: "Total Courses",
 		number: "103",
 		percentage: "17.64%",
-		icon: <FaBook className='text-4xl text-[#673ab7]' />,
+		icon: <FaBook className='text-4xl  text-[#673ab7]' />,
 	},
 	{
 		id: 4,
 		label: "Visitors",
 		number: "2,352",
 		percentage: "19.27%",
-		icon: <BsCupFill className='text-4xl text-[#e83e8c]' />,
+		icon: <BsCupFill className='text-4xl text-[#989898]' />,
 	},
 ];

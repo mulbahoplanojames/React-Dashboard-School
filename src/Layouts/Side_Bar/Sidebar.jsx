@@ -17,7 +17,7 @@ import { MdOutlineFormatIndentIncrease } from "react-icons/md";
 const Sidebar = () => {
 	return (
 		<>
-			<div className='w-[327px] flex flex-col  overflow-y-scroll sm:block hidden'>
+			<div className='w-[280px] flex flex-col  overflow-y-scroll sm:block hidden'>
 				{/* // Logo */}
 				<div className='flex items-center justify-center gap-3 bg-2 py-4 cursor-pointer mb-8'>
 					<RiSchoolFill className='text-4xl text-white' />
@@ -28,7 +28,7 @@ const Sidebar = () => {
 				{/* // Side Bar Navlinks */}
 				<SidebarLinks />
 				{/* // Footer Bar Navlinks */}
-				<div className=''>
+				<div className='px-2'>
 					<LinksDropdown
 						object={Forms}
 						title={"Forms"}

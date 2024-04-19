@@ -4,33 +4,34 @@
  * or render a card layout
  */
 
-const CardOne = (props) => {
+const CardThree = (props) => {
 	// Object Destructing of props
 	const { label, number, percentage, icon, color, value } = props;
 
 	return (
 		<>
-			<div
-				className='w-[240px] h-fit py-5 px-3 bg-blue-400 rounded-lg flex items-center gap-4'
-				style={{ background: `${color}` }}
-			>
-				<div className='w-14 h-14 rounded-full bg-gradient-to-r from-slate-200 text-white font-extrabold  flex justify-center items-center'>
+			<div className='w-[270px] h-fit py-5 px-3 bg-white shadow-xl rounded-lg flex items-center gap-4'>
+				<div
+					className='w-20 h-20 rounded-full  font-extrabold  flex justify-center items-center'
+					style={{ background: `${color}` }}
+				>
 					{icon}
 				</div>
 				<div className='text-white'>
-					<p className='text-xl  pb-2'>{label}</p>
-					<p className='text-2xl pb-2'>{number}</p>
+					<p className='text-xl text-black  pb-2'>{label}</p>
+					<p className='text-2xl text-green-600 pb-2'>{number}</p>
 					<progress
 						className='progress w-32'
+						style={{ background: `${color}` }}
 						value={value}
 						max='100'
 					></progress>
 
-					<p className='text-xl'>{percentage}</p>
+					<p className='text-xl text-black'>{percentage}</p>
 				</div>
 			</div>
 		</>
 	);
 };
 
-export default CardOne;
+export default CardThree;

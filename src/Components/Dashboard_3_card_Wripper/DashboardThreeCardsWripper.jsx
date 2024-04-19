@@ -1,18 +1,18 @@
 /*
  * ===========================================================================================
- * This component DashboardOneCardsWripper is use with in the Dashboard One omponent to display
+ * This component DashboardThreeCardsWripper is use with in the Dashboard One omponent to display
  * or render multiple cards layout in a flex or gird layout
  */
 
-import CardOne from "../Cards/Card_One/CardOne";
 import cardOneData from "../../Constants/Constants";
+import CardThree from "../Cards/Card_Three/CardThree";
 
-const DashboardOneCardsWripper = () => {
+const DashboardThreeCardsWripper = () => {
 	return (
 		<>
-			<div className='grid lg:grid-cols-4 md:grid-cols-2 grid-cols-1 lg:gap-x-6 gap-x-4 gap-y-6 place-items-center mb-10'>
+			<div className='grid lg:grid-cols-4 md:grid-cols-2 grid-cols-1 lg:gap-x-12 gap-x-4 gap-y-6 place-items-center mb-10'>
 				{cardOneData.map((item) => (
-					<CardOne
+					<CardThree
 						key={item.id}
 						label={item.label}
 						number={item.number}
@@ -27,4 +27,4 @@ const DashboardOneCardsWripper = () => {
 	);
 };
 
-export default DashboardOneCardsWripper;
+export default DashboardThreeCardsWripper;

@@ -205,7 +205,7 @@ export const teachersDataOne = [
 		rating: "4.2",
 	},
 	{
-		id: 3,
+		id: 3,	
 		avater: avatar3,
 		name: "Alice Johnson",
 		department: "English",

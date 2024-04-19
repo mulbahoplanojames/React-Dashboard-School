@@ -5,6 +5,9 @@ import DashboardOneHeader from "../../../Components/Dashboard_1_Header/Dashboard
 import NewStudentTableOne from "../../../Components/Tables/NewStudents_Table_One/NewStudentsTableOne";
 import TeachersTableOne from "../../../Components/Tables/Teacher_Table_One/TeachersTableOne";
 
+
+// - Added BarChart component,  Added Student Performance section, Updated TeachersTableOne component, Added NewStudentTableOne component
+
 const DashboardOne = () => {
 	return (
 		<div className='py-10 md:px-5 px-3 bg-1 '>
@@ -12,24 +15,24 @@ const DashboardOne = () => {
 			<DashboardOneHeader />
 			<DashboardOneCardsWripper />
 			{/* // Line Cart and Bar Chart */}
-			<div className='flex items-center flex-wrap gap-12 mb-14'>
-				<div className='w-[520px] h-[530px]'>
+			<div className='flex items-center flex-wrap gap-8 mb-14'>
+				<div className='w-[450px] h-[530px]'>
 					<LineChart />
 				</div>
-				<div className='w-[560px] h-[530px] '>
+				<div className='w-[520px] h-[530px] '>
 					<BarChart />
 				</div>{" "}
 			</div>
-			{/* // NTeachers Table and Bar Chart */}
+			{/* // Teachers Table and Bar Chart */}
 			<div className='flex gap-6 flex-wrap mb-14'>
 				<TeachersTableOne />
-				<div className='w-60 h-[540px] bg-white shadow-lg rounded-lg p-6 overflow-hidden'>
+				<div className='w-52 h-[540px] bg-white shadow-lg rounded-lg p-6 overflow-hidden'>
 					<p className='text-2xl font-bold pb-5'>Student Performance</p>
 					<p className='text-lg pb-2'> Overall Growth</p>
 					<p className='text-lg font-bold'>38.80%</p>
-					<div className='overflow-hidden object-cover'>
+					<div className='overflow-hidden object-cover h-80 '>
 						<BarChart />
-					</div>{" "}
+					</div>
 				</div>
 			</div>
 			{/* // New Students Table  */}
