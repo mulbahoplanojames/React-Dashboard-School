@@ -205,7 +205,7 @@ export const teachersDataOne = [
 		rating: "4.2",
 	},
 	{
-		id: 3,	
+		id: 3,
 		avater: avatar3,
 		name: "Alice Johnson",
 		department: "English",
@@ -438,6 +438,38 @@ export const studentSportData = [
 		Date: "2024-04-20",
 		Time: "4:00 PM",
 		Actions: <ButtonTwo color={"#57a5ff"} />,
+	},
+	{
+		id: 9,
+		Studentname: "Doe Peter",
+		AssignedCoach: "Alice Smith",
+		Date: "2024-04-13",
+		Time: "10:00 AM",
+		Actions: <ButtonTwo color={"#ffa42d"} />,
+	},
+	{
+		id: 10,
+		Studentname: "Smith Jane",
+		AssignedCoach: "Bob Johnson",
+		Date: "2024-04-14",
+		Time: "2:30 PM",
+		Actions: <ButtonTwo color={"#3abaf4"} />,
+	},
+	{
+		id: 11,
+		Studentname: "Johnson Alex",
+		AssignedCoach: "Emily Brown",
+		Date: "2024-04-15",
+		Time: "11:15 AM",
+		Actions: <ButtonTwo color={"#54ca68"} />,
+	},
+	{
+		id: 12,
+		Studentname: "Brown Michael",
+		AssignedCoach: "David Wilson",
+		Date: "2024-04-16",
+		Time: "9:00 AM",
+		Actions: <ButtonTwo color={"#673ab7"} />,
 	},
 ];
 
