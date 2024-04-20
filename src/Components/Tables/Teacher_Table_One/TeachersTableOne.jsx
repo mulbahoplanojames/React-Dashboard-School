@@ -4,7 +4,7 @@
  * or render Teachers Informations or details in a tabular form
  */
 
-import TableRow from "./Table_Rows/TableRow";
+import TableRow from "../../Table_Rows/TableRow";
 import { teachersDataOne } from "../../../Data/Data";
 
 /*

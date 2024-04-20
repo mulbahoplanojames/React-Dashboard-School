@@ -16,7 +16,7 @@ import TeachersTableOne from "../../../Components/Tables/Teacher_Table_One/Teach
  */
 const DashboardOne = () => {
 	return (
-		<div className='py-10 md:px-5 px-3 bg-1 '>
+		<section className='py-10 md:px-5 px-3 bg-1 '>
 			{/* Dashboard HeaderTitle and a link to to go back to the home page  */}
 			<DashboardOneHeader />
 			{/* // DashboardOneCardsWripper component */}
@@ -49,7 +49,7 @@ const DashboardOne = () => {
 			</div>
 			{/* // New Students Table  */}
 			<NewStudentTableOne />
-		</div>
+		</section>
 	);
 };
 

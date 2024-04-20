@@ -15,7 +15,7 @@ const ButtonOne = () => {
 			<div className='dropdown dropdown-end'>
 				<div tabIndex={0} role='button'>
 					<div className='indicator'>
-						<button className='bg-[#e83e8c] text-white rounded-sm text-base py-2 px-4 flex items-center  gap-1'>
+						<button className='bg-[#e83e8c] text-white rounded-sm text-base py-1 px-4 flex items-center  gap-1'>
 							Tools <MdKeyboardArrowDown className='text-xl' />
 						</button>
 					</div>

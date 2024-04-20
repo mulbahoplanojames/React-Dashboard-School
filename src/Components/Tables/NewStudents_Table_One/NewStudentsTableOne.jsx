@@ -1,5 +1,5 @@
 import { newStudentstableDataOne } from "../../../Data/Data";
-import TableRowTwo from "../Teacher_Table_One/Table_Rows/TableRowTwo";
+import TableRowTwo from "../../Table_Rows/TableRowTwo";
 
 /*
  * NewStudentTableOne component

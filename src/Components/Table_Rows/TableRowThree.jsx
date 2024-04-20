@@ -1,10 +1,10 @@
 /*
  * ===========================================================================================
- * This component TableRow is use with in the TeachersTableOne omponent to display
+ * This component TableRow is use with in the TeachersTableOne Component to display
  * or render Teachers Datas obtain form the Data component  in side of the table role.
  */
 
-import Checkbox from "../../../CheckBox/Checkbox";
+import Checkbox from "../CheckBox/Checkbox";
 
 const TableRowThree = (props) => {
 	const { studentname, assigncoach, data, time, action } = props;

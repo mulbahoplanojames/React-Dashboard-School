@@ -1,7 +1,7 @@
 import { Link } from "react-router-dom";
 import { studentSportData } from "../../../Data/Data";
 import Checkbox from "../../CheckBox/Checkbox";
-import TableRowThree from "../Teacher_Table_One/Table_Rows/TableRowThree";
+import TableRowThree from "../../Table_Rows/TableRowThree";
 import ButtonOne from "../../../Interfaces/Button_One/ButtonOne";
 
 /**
@@ -21,9 +21,9 @@ const SportTable = () => {
 				</p>
 
 				{/* // !Buttons  */}
-				<div className='flex justify-between px-6 py-7'>
+				<div className='flex justify-between px-6 py-4'>
 					<Link to=''>
-						<button className='bg-blue-400 text-white rounded-sm text-base py-2 px-4'>
+						<button className='bg-blue-400 text-white rounded-sm text-base py-1 px-4'>
 							Add New<span className='pl-2'>+</span>
 						</button>
 					</Link>
