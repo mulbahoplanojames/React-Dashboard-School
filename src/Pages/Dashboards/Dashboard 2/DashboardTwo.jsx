@@ -8,32 +8,44 @@ import TeachersTableOne from "../../../Components/Tables/Teacher_Table_One/Teach
 import ProfessorsList from "../../../Components/Professors_Lists/ProfessorsList";
 
 const DashboardTwo = () => {
+	/*
+	 * This is the Dashboard Two component, This component is used to render all the data or contents
+	 * for Dashboard 2 or Dashboard 2 Page.
+	 */
 	return (
 		<div className='py-10 md:px-5 px-3 bg-1 '>
+			{/* //! Header component */}
 			<DashboardOneHeader />
 			<div className='flex gap-8 flex-wrap mb-8'>
+				{/* //! Card Wripper component */}
 				<DaschoardTwoCardWripper />
-				<div className='w-[600px] h-[400px]'>
+				{/* //! Pie Chart component */}
+				<div className='w-[500px] h-[400px]'>
 					<PieChart />
 				</div>
 			</div>
 			{/* //! Sports Table  */}
 			<div className='mb-14 flex gap-10'>
+				{/* //! Sport Table component */}
 				<SportTable />
+				{/* //! Professors List component */}
 				<ProfessorsList />
 			</div>
 			{/* //! Charts */}
 			<div className='flex gap-8 items-center flex-wrap mb-14'>
+				{/* //! Pie Chart component */}
 				<div className='w-[350px] h-[330px] rounded-md overflow-hidden shadow-lg'>
 					<PieChart />
 				</div>
+				{/* //! Line Chart component */}
 				<div className='w-[350px] h-[330px] rounded-mdoverflow-hidden shadow-lg'>
 					<LineChart />
 				</div>
+				{/* //! Bar Chart component */}
 				<div className='w-[350px] h-[330px] rounded-mdoverflow-hidden shadow-lg'>
 					<BarChart />
 				</div>
-				{/* //! teacher Table  */}
+				{/* //! Teachers Table One component */}
 				<TeachersTableOne />
 			</div>
 		</div>

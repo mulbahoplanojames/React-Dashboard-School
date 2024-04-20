@@ -7,6 +7,11 @@
 import { newStudentstableDataOne } from "../../../Data/Data";
 import TableRowTwo from "../Teacher_Table_One/Table_Rows/TableRowTwo";
 
+/*
+ * NewStudentTableOne component
+ * The component that displays all the New Students Informations in a tabular form
+ * @returns {<React.Fragment>} Returns the NewStudentTableOne component
+ */
 const NewStudentTableOne = () => {
 	return (
 		<>
@@ -29,9 +34,12 @@ const NewStudentTableOne = () => {
 					<tbody>
 						{/* row 1 */}
 
+						{/* Map through newStudentstableDataOne array */}
 						{newStudentstableDataOne.map((data) => (
 							<TableRowTwo
+								// Pass unique key prop to each TableRowTwo
 								key={data.id}
+								// Pass props to TableRowTwo component
 								number={data.number}
 								name={data.name}
 								assignedprofessor={data.assignedprofessor}
