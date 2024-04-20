@@ -1,5 +1,11 @@
+import StudentCard from "../../../../Components/Cards/Student_Card/StudentCard";
+
 const GridView = () => {
-	return <div>GridView</div>;
+	return (
+		<>
+			<StudentCard />
+		</>
+	);
 };
 
 export default GridView;

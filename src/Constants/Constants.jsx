@@ -196,6 +196,24 @@ export const cardTwoData = [
  * or informations about the Students in side of the table role.
  */
 
+export const allStudentsGridViewData = [
+	{
+		id: 1,
+		name: "John Smith",
+		subject: "Mathematics",
+		location: "123 Main Street",
+		city: "Anytown",
+		contact: "+1 (123) 456-7890",
+	},
+];
+
+/*
+ * ===============================================================================
+ * All Students Table Data
+ * This data is use with in the AllStudentsTable Component to display or render All Students Datas
+ * or informations about the Students in side of the table role.
+ */
+
 import avatar6 from "/src/assets/user2.jpg";
 import avatar7 from "/src/assets/user3.jpg";
 import avatar8 from "/src/assets/user4.jpg";
