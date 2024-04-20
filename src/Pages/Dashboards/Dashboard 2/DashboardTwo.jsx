@@ -13,40 +13,45 @@ const DashboardTwo = () => {
 	 * for Dashboard 2 or Dashboard 2 Page.
 	 */
 	return (
+		/*
+		 * This is the outer most div element, This element has some predefined className and is
+		 * responsible for giving some padding and background color to the whole component.
+		 */
 		<div className='py-10 md:px-5 px-3 bg-1 '>
-			{/* //! Header component */}
+			{/* // Header component */}
 			<DashboardOneHeader />
+			{/* // Cards section */}
 			<div className='flex gap-8 flex-wrap mb-8'>
-				{/* //! Card Wripper component */}
+				{/* // Card wrapper component */}
 				<DaschoardTwoCardWripper />
-				{/* //! Pie Chart component */}
+				{/* // Pie Chart component */}
 				<div className='w-[500px] h-[400px]'>
 					<PieChart />
 				</div>
 			</div>
-			{/* //! Sports Table  */}
+			{/* // Tables section */}
 			<div className='mb-14 flex gap-10'>
-				{/* //! Sport Table component */}
+				{/* // Sport Table component */}
 				<SportTable />
-				{/* //! Professors List component */}
+				{/* // Professors List component */}
 				<ProfessorsList />
 			</div>
-			{/* //! Charts */}
+			{/* //! Charts section */}
 			<div className='flex gap-8 items-center flex-wrap mb-14'>
-				{/* //! Pie Chart component */}
-				<div className='w-[350px] h-[330px] rounded-md overflow-hidden shadow-lg'>
+				{/* //! Pie Chart */}
+				<div className='w-[320px] h-[310px] rounded-md overflow-hidden shadow-lg'>
 					<PieChart />
 				</div>
-				{/* //! Line Chart component */}
-				<div className='w-[350px] h-[330px] rounded-mdoverflow-hidden shadow-lg'>
+				{/* //! Line Chart */}
+				<div className='w-[320px] h-[310px] rounded-mdoverflow-hidden shadow-lg'>
 					<LineChart />
 				</div>
-				{/* //! Bar Chart component */}
-				<div className='w-[350px] h-[330px] rounded-mdoverflow-hidden shadow-lg'>
+				{/* //! Bar Chart */}
+				<div className='w-[320px] h-[310px] rounded-mdoverflow-hidden shadow-lg'>
 					<BarChart />
 				</div>
-				{/* //! Teachers Table One component */}
 			</div>
+			{/* //! Table component */}
 			<TeachersTableOne />
 		</div>
 	);
