@@ -203,6 +203,31 @@ import avatar9 from "/src/assets/user5.jpg";
 import avatar10 from "/src/assets/user6.jpg";
 import avatar11 from "/src/assets/user1.jpg";
 
+//? Icons from react icons
+import { FaPen, FaRegTrashAlt } from "react-icons/fa";
+
+//? Edit button to edit students details
+const editBtn = (
+	<button className='bg-[#00e396] hover:bg-green-700 text-white text-base py-1 px-1 cursor-pointer rounded-md'>
+		<FaPen className='text-sm' />
+	</button>
+);
+
+//? Delete button to delete students
+const deleteBtn = (
+	<button className='bg-red-400 hover:bg-red-700 text-white text-base py-1 px-1 cursor-pointer rounded-md'>
+		<FaRegTrashAlt className='text-sm' />
+	</button>
+);
+
+//? Button Wrapper to wrap edit and delete buttons
+const buttonWrapper = (
+	<div className='flex gap-2'>
+		{editBtn}
+		{deleteBtn}
+	</div>
+);
+
 export const allStudentsTableData = [
 	{
 		id: 6,
@@ -213,29 +238,29 @@ export const allStudentsTableData = [
 		mobile: "123-456-7890",
 		email: "john.doe@example.com",
 		admissiondate: "2023-09-01",
-		action: "approve",
+		action: buttonWrapper,
 	},
 	{
 		id: 2,
 		avatar: avatar2,
-		rollnumber: "12345",
-		name: "John Doe",
+		rollnumber: "98463",
+		name: "Mary Johson",
 		department: "Computer Science",
 		mobile: "123-456-7890",
 		email: "john.doe@example.com",
 		admissiondate: "2023-09-01",
-		action: "approve",
+		action: buttonWrapper,
 	},
 	{
 		id: 11,
 		avatar: avatar3,
-		rollnumber: "12345",
-		name: "John Doe",
+		rollnumber: "35789",
+		name: "Solomon Peterson",
 		department: "Computer Science",
 		mobile: "123-456-7890",
 		email: "john.doe@example.com",
 		admissiondate: "2023-09-01",
-		action: "approve",
+		action: buttonWrapper,
 	},
 	{
 		id: 4,
@@ -246,7 +271,7 @@ export const allStudentsTableData = [
 		mobile: "234-567-8901",
 		email: "michael.brown@example.com",
 		admissiondate: "2023-06-10",
-		action: "approve",
+		action: buttonWrapper,
 	},
 	{
 		id: 10,
@@ -257,7 +282,7 @@ export const allStudentsTableData = [
 		mobile: "876-543-2109",
 		email: "emily.wilson@example.com",
 		admissiondate: "2023-05-05",
-		action: "approve",
+		action: buttonWrapper,
 	},
 	{
 		id: 6,
@@ -268,7 +293,7 @@ export const allStudentsTableData = [
 		mobile: "543-210-9876",
 		email: "david.lee@example.com",
 		admissiondate: "2023-04-01",
-		action: "reject",
+		action: buttonWrapper,
 	},
 	{
 		id: 7,
@@ -279,7 +304,7 @@ export const allStudentsTableData = [
 		mobile: "321-098-7654",
 		email: "sarah.taylor@example.com",
 		admissiondate: "2023-03-15",
-		action: "pending",
+		action: buttonWrapper,
 	},
 	{
 		id: 8,
@@ -290,7 +315,7 @@ export const allStudentsTableData = [
 		mobile: "654-321-0987",
 		email: "kevin.martinez@example.com",
 		admissiondate: "2023-02-28",
-		action: "approve",
+		action: buttonWrapper,
 	},
 	{
 		id: 9,
@@ -301,7 +326,7 @@ export const allStudentsTableData = [
 		mobile: "890-123-4567",
 		email: "sophia.garcia@example.com",
 		admissiondate: "2023-01-10",
-		action: "reject",
+		action: buttonWrapper,
 	},
 	{
 		id: 3,
@@ -312,7 +337,7 @@ export const allStudentsTableData = [
 		mobile: "123-890-4567",
 		email: "daniel.hernandez@example.com",
 		admissiondate: "2022-12-25",
-		action: "pending",
+		action: buttonWrapper,
 	},
 	{
 		id: 11,
@@ -323,7 +348,7 @@ export const allStudentsTableData = [
 		mobile: "890-456-1234",
 		email: "olivia.perez@example.com",
 		admissiondate: "2022-11-20",
-		action: "approve",
+		action: buttonWrapper,
 	},
 	{
 		id: 12,
@@ -334,7 +359,7 @@ export const allStudentsTableData = [
 		mobile: "234-890-5678",
 		email: "william.nguyen@example.com",
 		admissiondate: "2022-10-05",
-		action: "reject",
+		action: buttonWrapper,
 	},
 	{
 		id: 13,
@@ -345,7 +370,7 @@ export const allStudentsTableData = [
 		mobile: "876-234-9012",
 		email: "emma.rodriguez@example.com",
 		admissiondate: "2022-09-01",
-		action: "approve",
+		action: buttonWrapper,
 	},
 	{
 		id: 14,
@@ -356,7 +381,7 @@ export const allStudentsTableData = [
 		mobile: "543-901-2345",
 		email: "james.kim@example.com",
 		admissiondate: "2022-08-15",
-		action: "pending",
+		action: buttonWrapper,
 	},
 	{
 		id: 15,
@@ -367,7 +392,7 @@ export const allStudentsTableData = [
 		mobile: "321-678-9012",
 		email: "ava.chen@example.com",
 		admissiondate: "2022-07-10",
-		action: "approve",
+		action: buttonWrapper,
 	},
 	{
 		id: 16,
@@ -378,7 +403,7 @@ export const allStudentsTableData = [
 		mobile: "654-901-2346",
 		email: "logan.wong@example.com",
 		admissiondate: "2022-06-05",
-		action: "reject",
+		action: buttonWrapper,
 	},
 	{
 		id: 17,
@@ -389,7 +414,7 @@ export const allStudentsTableData = [
 		mobile: "890-234-5678",
 		email: "mia.patel@example.com",
 		admissiondate: "2022-05-01",
-		action: "pending",
+		action: buttonWrapper,
 	},
 	{
 		id: 18,
@@ -400,7 +425,7 @@ export const allStudentsTableData = [
 		mobile: "123-567-8901",
 		email: "ethan.wilson@example.com",
 		admissiondate: "2022-04-15",
-		action: "approve",
+		action: buttonWrapper,
 	},
 	{
 		id: 19,
@@ -411,7 +436,7 @@ export const allStudentsTableData = [
 		mobile: "890-567-1234",
 		email: "isabella.gonzalez@example.com",
 		admissiondate: "2022-03-10",
-		action: "reject",
+		action: buttonWrapper,
 	},
 	{
 		id: 20,
@@ -422,7 +447,7 @@ export const allStudentsTableData = [
 		mobile: "234-901-5678",
 		email: "noah.ramirez@example.com",
 		admissiondate: "2022-02-05",
-		action: "pending",
+		action: buttonWrapper,
 	},
 	{
 		id: 21,
@@ -433,7 +458,7 @@ export const allStudentsTableData = [
 		mobile: "876-345-9012",
 		email: "charlotte.lewis@example.com",
 		admissiondate: "2022-01-01",
-		action: "approve",
+		action: buttonWrapper,
 	},
 	{
 		id: 22,
@@ -444,7 +469,7 @@ export const allStudentsTableData = [
 		mobile: "543-901-6789",
 		email: "benjamin.martinez@example.com",
 		admissiondate: "2021-12-25",
-		action: "reject",
+		action: buttonWrapper,
 	},
 	{
 		id: 23,
@@ -455,7 +480,7 @@ export const allStudentsTableData = [
 		mobile: "321-678-9012",
 		email: "amelia.clark@example.com",
 		admissiondate: "2021-11-20",
-		action: "pending",
+		action: buttonWrapper,
 	},
 	{
 		id: 24,
@@ -466,7 +491,7 @@ export const allStudentsTableData = [
 		mobile: "654-901-2345",
 		email: "henry.thompson@example.com",
 		admissiondate: "2021-10-15",
-		action: "approve",
+		action: buttonWrapper,
 	},
 	{
 		id: 25,
@@ -477,7 +502,7 @@ export const allStudentsTableData = [
 		mobile: "890-234-5678",
 		email: "harper.rodriguez@example.com",
 		admissiondate: "2021-09-10",
-		action: "reject",
+		action: buttonWrapper,
 	},
 	{
 		id: 26,
@@ -488,7 +513,7 @@ export const allStudentsTableData = [
 		mobile: "123-678-9012",
 		email: "evelyn.harris@example.com",
 		admissiondate: "2021-08-05",
-		action: "pending",
+		action: buttonWrapper,
 	},
 	{
 		id: 27,
@@ -499,7 +524,7 @@ export const allStudentsTableData = [
 		mobile: "890-567-2345",
 		email: "liam.martinez@example.com",
 		admissiondate: "2021-07-01",
-		action: "approve",
+		action: buttonWrapper,
 	},
 	{
 		id: 28,
@@ -510,7 +535,7 @@ export const allStudentsTableData = [
 		mobile: "234-901-6789",
 		email: "mila.baker@example.com",
 		admissiondate: "2021-06-15",
-		action: "reject",
+		action: buttonWrapper,
 	},
 	{
 		id: 29,
@@ -521,7 +546,7 @@ export const allStudentsTableData = [
 		mobile: "876-345-9012",
 		email: "jackson.carter@example.com",
 		admissiondate: "2021-05-10",
-		action: "pending",
+		action: buttonWrapper,
 	},
 	{
 		id: 30,
@@ -532,6 +557,6 @@ export const allStudentsTableData = [
 		mobile: "543-901-2345",
 		email: "penelope.white@example.com",
 		admissiondate: "2021-04-05",
-		action: "approve",
+		action: buttonWrapper,
 	},
 ];

@@ -3,12 +3,11 @@ import { allStudentsTableData } from "../../../Constants/Constants";
 import AllStudentsTableRow from "../../Table_Rows/AllStudentsTableRow";
 
 /**
- * Component for Student Sport Table, this component is used with in the Dashboard Two component
- * to display or render Student Sport Informations or details in a tabular form and with the
- * help of the ButtonOne component. @returns {JSX.Element}
+ * @description This is a component for All Students Table, this component is used with in
+ * the All Studen component to display or render All Students Informations or details in
+ * a tabular form.
  * @returns {JSX.Element}
  */
-
 const AllStudentsTable = () => {
 	return (
 		// !Container div
@@ -46,6 +45,7 @@ const AllStudentsTable = () => {
 						{/* row 1 */}
 						{allStudentsTableData.map((data) => (
 							<AllStudentsTableRow
+								// , name, , email, mobile, rollnumber, rating, admissiondate, acion
 								key={data.id}
 								avatar={data.avatar}
 								rollnumber={data.rollnumber}
@@ -56,7 +56,6 @@ const AllStudentsTable = () => {
 								admissiondate={data.admissiondate}
 								action={data.action}
 							/>
-							// , name, , email, mobile, rollnumber, rating, admissiondate, acion
 						))}
 					</tbody>
 				</table>

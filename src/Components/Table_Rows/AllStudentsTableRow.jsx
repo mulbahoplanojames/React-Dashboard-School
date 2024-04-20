@@ -1,59 +1,58 @@
 /*
- * ===========================================================================================
- * This component TableRow is use with in the TeachersTableOne omponent to display
- * or render Teachers Datas obtain form the Data component  in side of the table role.
+ * AllStudentsTableRow component
+ * This component is used to display a single row of student data in the
+ * All Students table on the Dashboard
  */
-
 const AllStudentsTableRow = (props) => {
+	// Destructure props
 	const {
-		avatar,
-		studentname,
-		department,
-		email,
-		mobile,
-		rollnumber,
-		rating,
-		admissiondate,
-		action,
+		avatar, // Student avatar URL
+		studentname, // Student name
+		department, // Student department
+		email, // Student email
+		mobile, // Student mobile
+		rollnumber, // Student roll number
+		rating, // Student rating
+		admissiondate, // Student admission date
+		action, // Action buttons (Edit, Delete, etc.)
 	} = props;
 
 	return (
-		<>
-			<tr className='hover:bg-slate-200'>
-				<td>
-					<div className='avatar'>
-						<div className='mask mask-squircle w-8 h-8'>
-							<img src={avatar} alt={avatar} />
-						</div>
+		// Return a <tr> element
+		<tr className='hover:bg-slate-200'>
+			<td>
+				<div className='avatar'>
+					<div className='mask mask-squircle w-8 h-8'>
+						<img src={avatar} alt={avatar} />
 					</div>
-				</td>
-				<td>
-					<div>
-						<p className='text-sm'>{rollnumber}</p>
-					</div>
-				</td>
-				<td>
-					<div>
-						<p className='text-sm'>{studentname}</p>
-					</div>
-				</td>
-				<td>
-					<span className='text-sm'>{department}</span>
-				</td>
-				<td>
-					<p className='text-sm'>{mobile}</p>
-				</td>
-				<td>
-					<p className='text-sm'>{email}</p>
-				</td>
-				<td>
-					<p className='text-sm'>{admissiondate}</p>
-				</td>
-				<td>
-					<p className='text-sm'>{action}</p>
-				</td>
-			</tr>
-		</>
+				</div>
+			</td>
+			<td>
+				<div>
+					<p className='text-sm'>{rollnumber}</p>
+				</div>
+			</td>
+			<td>
+				<div>
+					<p className='text-sm'>{studentname}</p>
+				</div>
+			</td>
+			<td>
+				<span className='text-sm'>{department}</span>
+			</td>
+			<td>
+				<p className='text-sm'>{mobile}</p>
+			</td>
+			<td>
+				<p className='text-sm'>{email}</p>
+			</td>
+			<td>
+				<p className='text-sm'>{admissiondate}</p>
+			</td>
+			<td>
+				<p className='text-sm'>{action}</p>
+			</td>
+		</tr>
 	);
 };
 
