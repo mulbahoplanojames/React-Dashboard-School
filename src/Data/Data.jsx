@@ -455,22 +455,22 @@ export const studentSportData = [
 		Time: "2:30 PM",
 		Actions: <ButtonTwo color={"#3abaf4"} />,
 	},
-	{
-		id: 11,
-		Studentname: "Johnson Alex",
-		AssignedCoach: "Emily Brown",
-		Date: "2024-04-15",
-		Time: "11:15 AM",
-		Actions: <ButtonTwo color={"#54ca68"} />,
-	},
-	{
-		id: 12,
-		Studentname: "Brown Michael",
-		AssignedCoach: "David Wilson",
-		Date: "2024-04-16",
-		Time: "9:00 AM",
-		Actions: <ButtonTwo color={"#673ab7"} />,
-	},
+	// {
+	// 	id: 11,
+	// 	Studentname: "Johnson Alex",
+	// 	AssignedCoach: "Emily Brown",
+	// 	Date: "2024-04-15",
+	// 	Time: "11:15 AM",
+	// 	Actions: <ButtonTwo color={"#54ca68"} />,
+	// },
+	// {
+	// 	id: 12,
+	// 	Studentname: "Brown Michael",
+	// 	AssignedCoach: "David Wilson",
+	// 	Date: "2024-04-16",
+	// 	Time: "9:00 AM",
+	// 	Actions: <ButtonTwo color={"#673ab7"} />,
+	// },
 ];
 
 /*
@@ -529,11 +529,11 @@ export const professorsList = [
 		color: "green",
 		avatar: avatar4,
 	},
-	{
-		id: 8,
-		name: "William Peter-(md.com, PHD)",
-		status: "On Leave",
-		color: "blue",
-		avatar: avatar3,
-	},
+	// {
+	// 	id: 8,
+	// 	name: "William Peter-(md.com, PHD)",
+	// 	status: "On Leave",
+	// 	color: "blue",
+	// 	avatar: avatar3,
+	// },
 ];

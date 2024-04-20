@@ -7,7 +7,7 @@ import ButtonOne from "../../../Interfaces/Button_One/ButtonOne";
 const SportTable = () => {
 	return (
 		<>
-			<div className='overflow-x-auto bg-white w-[700px] rounded-xl overflow-y-clip'>
+			<div className='overflow-x-auto bg-white w-[700px] rounded-xl overflow-y-clip h-fit'>
 				<p className='px-6 py-3 text-2xl border-dotted border-b-4'>
 					Student Sport List
 				</p>
