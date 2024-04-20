@@ -4,8 +4,16 @@ import Checkbox from "../../CheckBox/Checkbox";
 import TableRowThree from "../Teacher_Table_One/Table_Rows/TableRowThree";
 import ButtonOne from "../../../Interfaces/Button_One/ButtonOne";
 
+/**
+ * Component for Student Sport Table, this component is used with in the Dashboard Two component
+ * to display or render Student Sport Informations or details in a tabular form and with the
+ * help of the ButtonOne component. @returns {JSX.Element}
+ * @returns {JSX.Element}
+ */
+
 const SportTable = () => {
 	return (
+		// !Container div
 		<>
 			<div className='overflow-x-auto bg-white w-[700px] rounded-xl overflow-y-clip h-fit'>
 				<p className='px-6 py-3 text-2xl border-dotted border-b-4'>

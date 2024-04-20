@@ -46,8 +46,8 @@ const DashboardTwo = () => {
 					<BarChart />
 				</div>
 				{/* //! Teachers Table One component */}
-				<TeachersTableOne />
 			</div>
+			<TeachersTableOne />
 		</div>
 	);
 };
