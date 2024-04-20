@@ -282,6 +282,27 @@ export const teachersDataOne = [
  * all the data or informations about the New Students
  */
 
+/*
+ * These buttons are use with in the New Students Table One Component to display if a student
+ * has paid or not
+ */
+const paid = (
+	<button className='bg-green-500 text-white rounded-sm text-base py-1 px-2 cursor-text'>
+		Paid
+	</button>
+);
+
+const unpaid = (
+	<button className='bg-red-500 text-white rounded-sm text-base py-1 px-2 cursor-text'>
+		Unpaid
+	</button>
+);
+
+const unpaid2 = (
+	<button className='bg-[#ffc269] text-white rounded-sm text-base py-1 px-2 cursor-text'>
+		Unpaid
+	</button>
+);
 export const newStudentstableDataOne = [
 	{
 		id: 1,
@@ -290,7 +311,7 @@ export const newStudentstableDataOne = [
 		assignedprofessor: "Kenny Josh",
 		dateofadmit: "27/05/2016",
 		brance: "Commerce",
-		fees: "Paid",
+		fees: paid,
 	},
 	{
 		id: 2,
@@ -299,7 +320,7 @@ export const newStudentstableDataOne = [
 		assignedprofessor: "Mark",
 		dateofadmit: "26/05/2017",
 		brance: "Mechanical",
-		fees: "Unpaid",
+		fees: unpaid,
 	},
 	{
 		id: 3,
@@ -308,7 +329,7 @@ export const newStudentstableDataOne = [
 		assignedprofessor: "Cinnabar",
 		dateofadmit: "21/05/2016",
 		brance: "Science",
-		fees: "Paid",
+		fees: paid,
 	},
 	{
 		id: 4,
@@ -317,7 +338,7 @@ export const newStudentstableDataOne = [
 		assignedprofessor: "Felix",
 		dateofadmit: "20/04/2016",
 		brance: "Commerce",
-		fees: "Unpaid",
+		fees: unpaid2,
 	},
 	{
 		id: 5,
@@ -326,7 +347,7 @@ export const newStudentstableDataOne = [
 		assignedprofessor: "Beryl",
 		dateofadmit: "24/05/2016",
 		brance: "Mechanical",
-		fees: "Paid",
+		fees: paid,
 	},
 	{
 		id: 6,
@@ -335,7 +356,7 @@ export const newStudentstableDataOne = [
 		assignedprofessor: "Joshep",
 		dateofadmit: "22/05/2016",
 		brance: "M.B.A.",
-		fees: "Unpaid",
+		fees: unpaid,
 	},
 	{
 		id: 7,
@@ -344,7 +365,7 @@ export const newStudentstableDataOne = [
 		assignedprofessor: "Sharma",
 		dateofadmit: "18/06/2016",
 		brance: "Science",
-		fees: "Paid",
+		fees: paid,
 	},
 	{
 		id: 8,
@@ -353,7 +374,7 @@ export const newStudentstableDataOne = [
 		assignedprofessor: "Jayesh",
 		dateofadmit: "17/05/2016",
 		brance: "Commerce",
-		fees: "Unpaid",
+		fees: unpaid2,
 	},
 	{
 		id: 9,
@@ -362,7 +383,7 @@ export const newStudentstableDataOne = [
 		assignedprofessor: "Mathematics",
 		dateofadmit: "17/05/2016",
 		brance: "Mechanical",
-		fees: "paid",
+		fees: paid,
 	},
 ];
 

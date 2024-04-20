@@ -1,9 +1,14 @@
 import { BrowserRouter, Routes, Route } from "react-router-dom";
 import Layout from "./Layouts/Layout/Layout";
+
+// Dashboard components import
 import DashboardOne from "./Pages/Dashboards/Dashboard 1/DashboardOne";
 import DashboardTwo from "./Pages/Dashboards/Dashboard 2/DashboardTwo";
 import DashboardThree from "./Pages/Dashboards/Dashboard 3/DashboardThree";
 import Logout from "./Components/Logout/Logout";
+
+// Students Component import
+import AllStudents from "./Pages/Students/All_Students/AllStudents";
 
 const App = () => {
 	// The app is wrapped in a BrowserRouter, which provides a navigational interface
@@ -18,18 +23,12 @@ const App = () => {
 					{/* // This is a route that matches the root path ('/') and renders the Layout component.
 						The Route component is used to specify a path that can be navigated to. */}
 					<Route path='/' element={<Layout />}>
-						{/* // This Route component is a child of the above Route and matches the root
-							path ('/') and renders the DashboardOne component. */}
+						{/* child roots and renders the Dashboard components. */}
 						<Route index element={<DashboardOne />} />
-						{/* // This Route component is also a child of the above Route and matches the
-							path '/dashboard2' and renders the DashboardTwo component. */}
 						<Route path='/dashboard2' element={<DashboardTwo />} />
-						{/* // This Route component is also a child of the above Route and matches the
-							path '/dashboard3' and renders the DashboardThree component. */}
 						<Route path='/dashboard3' element={<DashboardThree />} />
-						{/* // This Route component is also a child of the above Route and matches any
-							path that is not defined above and renders nothing. This is useful for
-							handling invalid routes. */}
+						{/* child roots and renders all the student components. */}
+						<Route path='/allstudents' element={<AllStudents />} />
 						<Route />
 					</Route>
 
@@ -40,6 +39,5 @@ const App = () => {
 		</>
 	);
 };
-
 
 export default App;

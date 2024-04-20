@@ -1,9 +1,3 @@
-/*
- * ===========================================================================================
- * This component TeachersTableOne is use with in the Dashboard One omponent to display
- * or render Teachers Informations or details in a tabular form
- */
-
 import { newStudentstableDataOne } from "../../../Data/Data";
 import TableRowTwo from "../Teacher_Table_One/Table_Rows/TableRowTwo";
 

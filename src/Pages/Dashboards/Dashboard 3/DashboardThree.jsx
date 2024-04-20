@@ -2,6 +2,7 @@ import BarChart from "../../../Components/Charts/Bar_Chart/Barchart";
 import LineChart from "../../../Components/Charts/Line_Chart/LineChart";
 import DashboardOneHeader from "../../../Components/Dashboard_1_Header/DashboardOneHeader";
 import DashboardThreeCardsWripper from "../../../Components/Dashboard_3_card_Wripper/DashboardThreeCardsWripper";
+import NewStudentTableOne from "../../../Components/Tables/NewStudents_Table_One/NewStudentsTableOne";
 
 /**
  * @function DashboardThree
@@ -28,6 +29,8 @@ const DashboardThree = () => {
 					<BarChart />
 				</div>
 			</div>
+			{/* This is the New Students Table One component */}
+			<NewStudentTableOne />
 		</div>
 	);
 };
