@@ -9,6 +9,8 @@ import Logout from "./Components/Logout/Logout";
 
 // Students Component import
 import AllStudents from "./Pages/Students/All_Students/AllStudents";
+import ListView from "./Pages/Students/All_Students/List_View/ListView";
+import GridView from "./Pages/Students/All_Students/Grid_View/GridView";
 
 const App = () => {
 	// The app is wrapped in a BrowserRouter, which provides a navigational interface
@@ -28,8 +30,10 @@ const App = () => {
 						<Route path='/dashboard2' element={<DashboardTwo />} />
 						<Route path='/dashboard3' element={<DashboardThree />} />
 						{/* child roots and renders all the student components. */}
-						<Route path='/allstudents' element={<AllStudents />} />
-						<Route />
+						<Route path='/allstudents' element={<AllStudents />}>
+							<Route path='listview' element={<ListView />} />
+							<Route path='gridview' element={<GridView />} />
+						</Route>
 					</Route>
 
 					{/* // This Route component matches the path '/logout' and renders the Logout component */}
