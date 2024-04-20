@@ -7,7 +7,7 @@ const ListViewButton = () => {
 	// with the 'to' prop we specify the path to the list view component
 	return (
 		<>
-			<Link to='listview'>
+			<Link to='/allstudents'>
 				<button className='text-xl focus:bg-[#6673fc] shadow-lg py-2 px-4 focus:text-white rounded-full '>
 					{/* the text inside the button */}
 					List View

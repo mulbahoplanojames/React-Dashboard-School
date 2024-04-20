@@ -31,7 +31,7 @@ const App = () => {
 						<Route path='/dashboard3' element={<DashboardThree />} />
 						{/* child roots and renders all the student components. */}
 						<Route path='/allstudents' element={<AllStudents />}>
-							<Route path='listview' element={<ListView />} />
+							<Route index element={<ListView />} />
 							<Route path='gridview' element={<GridView />} />
 						</Route>
 					</Route>
