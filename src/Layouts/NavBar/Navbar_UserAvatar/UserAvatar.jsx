@@ -36,7 +36,7 @@ const UserAvatar = () => {
 						<a>Settings</a>
 					</li>
 					<li>
-						<Link to={"/logout"}>Logout</Link>
+						<Link to={"/login"}>Logout</Link>
 					</li>
 				</ul>
 			</div>

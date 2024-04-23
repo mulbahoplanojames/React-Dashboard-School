@@ -5,7 +5,7 @@ import Layout from "./Layouts/Layout/Layout";
 import DashboardOne from "./Pages/Dashboards/Dashboard 1/DashboardOne";
 import DashboardTwo from "./Pages/Dashboards/Dashboard 2/DashboardTwo";
 import DashboardThree from "./Pages/Dashboards/Dashboard 3/DashboardThree";
-import Logout from "./Components/Logout/Logout";
+import LogIn from "./Components/LogIn/LogIn";
 
 // Students Component import
 import AllStudents from "./Pages/Students/All_Students/AllStudents";
@@ -37,7 +37,7 @@ const App = () => {
 					</Route>
 
 					{/* // This Route component matches the path '/logout' and renders the Logout component */}
-					<Route path='/logout' element={<Logout />} />
+					<Route path='/login' element={<LogIn />} />
 				</Routes>
 			</BrowserRouter>
 		</>
