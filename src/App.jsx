@@ -6,14 +6,17 @@ import DashboardOne from "./Pages/Dashboards/Dashboard 1/DashboardOne";
 import DashboardTwo from "./Pages/Dashboards/Dashboard 2/DashboardTwo";
 import DashboardThree from "./Pages/Dashboards/Dashboard 3/DashboardThree";
 
-// LogIn and CreateAccount Component import
-import LogIn from "./Components/LogIn/LogIn";
-import CreateAccount from "./Components/Create_Account/CreateAccount";
-
 // Students Component import
 import AllStudents from "./Pages/Students/All_Students/AllStudents";
 import ListView from "./Pages/Students/All_Students/List_View/ListView";
 import GridView from "./Pages/Students/All_Students/Grid_View/GridView";
+
+// LogIn and CreateAccount Component import
+import LogIn from "./Components/LogIn/LogIn";
+import CreateAccount from "./Components/Create_Account/CreateAccount";
+
+// EditUserProfile Component import
+import EditUserProfile from "./Components/Edit_User_Profile/EditUserProfile";
 
 const App = () => {
 	// The app is wrapped in a BrowserRouter, which provides a navigational interface
@@ -42,6 +45,7 @@ const App = () => {
 					{/* // This Route component matches the path '/logout' and renders the Logout component */}
 					<Route index element={<LogIn />} />
 					<Route path='createaccount' element={<CreateAccount />} />
+					<Route path='edituserprofile' element={<EditUserProfile />} />
 				</Routes>
 			</BrowserRouter>
 		</>
