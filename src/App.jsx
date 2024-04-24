@@ -26,7 +26,7 @@ const App = () => {
 						The Route component is used to specify a path that can be navigated to. */}
 					<Route path='/' element={<Layout />}>
 						{/* child roots and renders the Dashboard components. */}
-						<Route index element={<DashboardOne />} />
+						<Route path='/dashboard1' element={<DashboardOne />} />
 						<Route path='/dashboard2' element={<DashboardTwo />} />
 						<Route path='/dashboard3' element={<DashboardThree />} />
 						{/* child roots and renders all the student components. */}
@@ -37,7 +37,7 @@ const App = () => {
 					</Route>
 
 					{/* // This Route component matches the path '/logout' and renders the Logout component */}
-					<Route path='/login' element={<LogIn />} />
+					<Route index element={<LogIn />} />
 				</Routes>
 			</BrowserRouter>
 		</>
