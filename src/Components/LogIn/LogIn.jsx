@@ -19,14 +19,14 @@ const LogIn = () => {
 
 	// Event handler to update the email state
 	// Update the email state with the value from the input event
-	const handleEmialChange = (event) => {
-		setEmail(event.target.value);
+	const handleEmialChange = (e) => {
+		setEmail(e.target.value);
 	};
 
 	// Event handler to update the password state
 	// Update the password state with the value from the input event
-	const handlePasswordChange = (event) => {
-		setPassword(event.target.value);
+	const handlePasswordChange = (e) => {
+		setPassword(e.target.value);
 	};
 
 	/**
@@ -82,7 +82,8 @@ const LogIn = () => {
 		<>
 			<div className='bg-2 flex items-center justify-center w-screen h-screen py-6'>
 				{/* // LogIn Page Parent div */}
-				<div className='lg:w-[940px] w-full h-fit bg-white rounded-md  flex justify-center items-center flex-wrap py-5  px-4 gap-6'>
+				<div className='lg:w-[940px] w-full h-fit bg-white rounded-md  flex justify-center items-center flex-wrap py-5  px-4 gap-6 relative'>
+					<LoginKeys />
 					{/* // LogIn Page Form */}
 					<form
 						className=' md:w-[460px] w-full h-fit px-4 py-8'
@@ -171,3 +172,25 @@ const LogIn = () => {
 };
 
 export default LogIn;
+
+// Login Key component
+const LoginKeys = () => {
+	return (
+		<>
+			<div className='absolute md:top-0 bottom-[490px] md:right-0 right-5 bg-2 w-4/12 h-fit px-4 py-1 rounded-l-sm text-white md:block '>
+				<div className='flex justify-between gap-3'>
+					<div className=''>
+						<span>Key 1</span>
+						<h1>User Name : admin </h1>
+						<h1>Password : admin </h1>
+					</div>
+					<div className=''>
+						<span>Key 1</span>
+						<h1>User Name : user </h1>
+						<h1>Password : user </h1>
+					</div>
+				</div>
+			</div>
+		</>
+	);
+};
