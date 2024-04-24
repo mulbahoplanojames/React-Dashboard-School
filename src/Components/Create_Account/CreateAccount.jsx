@@ -10,12 +10,19 @@ import { useState } from "react";
  * @description The Logout component is responsible for rendering the LogIn Page
  * @returns {JSX.Element}
  */
-const LogIn = () => {
+const CreateAccount = () => {
 	const [email, setEmail] = useState("");
 	const [password, setPassword] = useState("");
+	const [name, setName] = useState("");
 	const [isShowPassword, setIsShowPassword] = useState(false);
 	const [showErrorMessage, setShowErrorMessage] = useState("");
 	const [isLoggedIn, setIsLoggedIn] = useState(false);
+
+	//Event handler for the name input change event
+	//Update the name state with the value from the input event
+	const handleChangeName = (event) => {
+		setName(event.target.value);
+	};
 
 	// Event handler to update the email state
 	// Update the email state with the value from the input event
@@ -61,12 +68,8 @@ const LogIn = () => {
 	 */
 	const handleIsLoggedIn = () => {
 		// Check if the email and password are correct
-		if (email === "admin" && password === "admin") {
+		if (email !== "" && password !== "" && name !== "") {
 			// If the email and password are correct set the error message to an empty string
-			setShowErrorMessage("");
-			// Return true if the user is logged in
-			return true;
-		} else if (email === "user" && password === "user") {
 			setShowErrorMessage("");
 			// Return true if the user is logged in
 			return true;
@@ -88,12 +91,24 @@ const LogIn = () => {
 						className=' md:w-[460px] w-full h-fit px-4 py-8'
 						onSubmit={handleSubbit}
 					>
-						<h1 className='text-3xl font-bold pb-1'>Welcome Back</h1>
-						<p className='text-base pb-5'>
-							Welcome back, Please fill in your details
-						</p>
+						<h1 className='text-3xl font-bold pb-1'>Welcome Guest</h1>
+						<p className='text-base pb-5'>Please fill in your details!</p>
 
-						{/* // Form Fields label one and text field one  */}
+						{/* // Form Fields label one and text field One */}
+						<label htmlFor='name' className='pb-1 inline-block'>
+							Name
+						</label>
+						<div className='w-[95%] h-10 mb-5 bg-white rounded-sm overflow-hidden border'>
+							<input
+								type='text'
+								className='outline-none border-none  w-full h-full rounded-sm pl-5'
+								value={name}
+								onChange={handleChangeName}
+								required
+							/>
+						</div>
+
+						{/* // Form Fields label Two and text field Two  */}
 						<label htmlFor='email' className='pb-1 inline-block'>
 							Username/Email
 						</label>
@@ -107,7 +122,7 @@ const LogIn = () => {
 							/>
 						</div>
 
-						{/* // Form Fields label two and text field two */}
+						{/* // Form Fields label Three and text field Three */}
 						<label htmlFor='password' className='pb-1 inline-block'>
 							Password
 						</label>
@@ -138,7 +153,7 @@ const LogIn = () => {
 						{/* // Error message */}
 						<p className='text-red-600 pb-2'>{showErrorMessage}</p>
 						{/* // Form submit button */}
-						<Link to={isLoggedIn ? "/dashboard1" : "/"}>
+						<Link to={isLoggedIn ? "/dashboard1" : "/createaccount"}>
 							<button
 								type='submit'
 								className='w-[95%] h-12 bg-black text-white  text-lg rounded-md'
@@ -150,9 +165,9 @@ const LogIn = () => {
 
 						{/* // Form link if you don't have an account */}
 						<p className='text-center pt-4'>
-							Don&apos;t have an account?
-							<Link to='createaccount' className='font-bold pl-1 inline-block'>
-								Sign up today!
+							Already have an account!
+							<Link to='/' className='font-bold pl-1 inline-block'>
+								Sign In
 							</Link>
 						</p>
 					</form>
@@ -170,4 +185,4 @@ const LogIn = () => {
 	);
 };
 
-export default LogIn;
+export default CreateAccount;

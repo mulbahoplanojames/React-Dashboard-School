@@ -5,7 +5,10 @@ import Layout from "./Layouts/Layout/Layout";
 import DashboardOne from "./Pages/Dashboards/Dashboard 1/DashboardOne";
 import DashboardTwo from "./Pages/Dashboards/Dashboard 2/DashboardTwo";
 import DashboardThree from "./Pages/Dashboards/Dashboard 3/DashboardThree";
+
+// LogIn and CreateAccount Component import
 import LogIn from "./Components/LogIn/LogIn";
+import CreateAccount from "./Components/Create_Account/CreateAccount";
 
 // Students Component import
 import AllStudents from "./Pages/Students/All_Students/AllStudents";
@@ -38,6 +41,7 @@ const App = () => {
 
 					{/* // This Route component matches the path '/logout' and renders the Logout component */}
 					<Route index element={<LogIn />} />
+					<Route path='createaccount' element={<CreateAccount />} />
 				</Routes>
 			</BrowserRouter>
 		</>
