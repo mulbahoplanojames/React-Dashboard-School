@@ -17,39 +17,42 @@ import CreateAccount from "./Components/Create_Account/CreateAccount";
 
 // EditUserProfile Component import
 import EditUserProfile from "./Components/Edit_User_Profile/EditUserProfile";
+import AddStudents from "./Pages/Students/Add_Students/AddStudents";
 
 const App = () => {
-	// The app is wrapped in a BrowserRouter, which provides a navigational interface
-	// between different routes.
-	return (
-		<>
-			{/* // Routes to navigate between pages */}
-			<BrowserRouter>
-				{/* // This is the main router for this application. It defines the different routes
+  // The app is wrapped in a BrowserRouter, which provides a navigational interface
+  // between different routes.
+  return (
+    <>
+      {/* // Routes to navigate between pages */}
+      <BrowserRouter>
+        {/* // This is the main router for this application. It defines the different routes
 					that our application can navigate to. */}
-				<Routes>
-					{/* // This is a route that matches the root path ('/') and renders the Layout component.
+        <Routes>
+          {/* // This is a route that matches the root path ('/') and renders the Layout component.
 						The Route component is used to specify a path that can be navigated to. */}
-					<Route path='/' element={<Layout />}>
-						{/* child roots and renders the Dashboard components. */}
-						<Route path='/dashboard1' element={<DashboardOne />} />
-						<Route path='/dashboard2' element={<DashboardTwo />} />
-						<Route path='/dashboard3' element={<DashboardThree />} />
-						{/* child roots and renders all the student components. */}
-						<Route path='/allstudents' element={<AllStudents />}>
-							<Route index element={<ListView />} />
-							<Route path='gridview' element={<GridView />} />
-						</Route>
-					</Route>
+          <Route path="/" element={<Layout />}>
+            {/* child roots and renders the Dashboard components. */}
+            <Route path="/dashboard1" element={<DashboardOne />} />
+            <Route path="/dashboard2" element={<DashboardTwo />} />
+            <Route path="/dashboard3" element={<DashboardThree />} />
+            {/* child roots and renders all the student components. */}
+            <Route path="/allstudents" element={<AllStudents />}>
+              <Route index element={<ListView />} />
+              <Route path="gridview" element={<GridView />} />
+            </Route>
+            {/* child roots and renders the Add Students components components. */}
+            <Route path="/addstudents" element={<AddStudents />} />
+          </Route>
 
-					{/* // This Route component matches the path '/logout' and renders the Logout component */}
-					<Route index element={<LogIn />} />
-					<Route path='createaccount' element={<CreateAccount />} />
-					<Route path='edituserprofile' element={<EditUserProfile />} />
-				</Routes>
-			</BrowserRouter>
-		</>
-	);
+          {/* // This Route component matches the path '/logout' and renders the Logout component */}
+          <Route index element={<LogIn />} />
+          <Route path="createaccount" element={<CreateAccount />} />
+          <Route path="edituserprofile" element={<EditUserProfile />} />
+        </Routes>
+      </BrowserRouter>
+    </>
+  );
 };
 
 export default App;
