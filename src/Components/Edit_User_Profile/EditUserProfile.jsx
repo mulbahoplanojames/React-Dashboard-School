@@ -7,7 +7,36 @@ const EditUserProfile = () => {
 	const [email, setEmail] = useState("");
 	const [password, setPassword] = useState("");
 	const [file, setFile] = useState(null);
+	const [isUpdated, setIsUpdated] = useState(false);
 
+	// Handle name change event
+	// Update the name state with the value from the input event
+	const handleChangeName = (e) => {
+		setName(e.target.value);
+	};
+
+	// Handle email change event
+	// Update the email state with the value from the input event
+	const handleEmailChange = (e) => {
+		setEmail(e.target.value);
+	};
+
+	//Handle password change event
+	// Update the password state with the value from the input event
+	const handlePasswordChange = (e) => {
+		setPassword(e.target.value);
+	};
+
+	const handleIsUpdated = () => {
+		if (name != "" && email != "" && password != "") {
+			return true;
+		} else {
+			return false;
+		}
+	};
+
+	// Handle file change event
+	// Update the file state with the selected file
 	const handleFileChange = (e) => {
 		setFile(e.target.files[0]);
 	};
@@ -15,6 +44,8 @@ const EditUserProfile = () => {
 	const handleSubmit = (e) => {
 		// Handle form submission
 		e.preventDefault();
+
+		handleIsUpdated;
 
 		console.log(`Submitted : ${file.size}  ${file.type}  ${file.name}`);
 	};
@@ -28,9 +59,15 @@ const EditUserProfile = () => {
 					</h1>
 
 					<form action='' onSubmit={handleSubmit}>
-						<NameInputField />
-						<EmailInputFields />
-						<PasswordInputFields />
+						<NameInputField name={name} handleNameChange={handleChangeName} />
+						<EmailInputFields
+							email={email}
+							handleEmailChange={handleEmailChange}
+						/>
+						<PasswordInputFields
+							password={password}
+							handlePasswordChange={handlePasswordChange}
+						/>
 
 						<label className='form-control w-full max-w-xs'>
 							<div className='label'>
@@ -45,10 +82,10 @@ const EditUserProfile = () => {
 						</label>
 
 						<Link
-							to={"/dashboard1"}
+							to={isUpdated ? "/dashboard1" : "/edituserprofile"}
 							className='text-lg bg-blue-300 py-1 px-5 mt-8 inline-block rounded-full text-white'
 							type='button'
-							onClick={handleSubmit}
+							onClick={() => setIsUpdated(handleIsUpdated)}
 						>
 							Sava Profile
 						</Link>
@@ -61,7 +98,7 @@ const EditUserProfile = () => {
 
 export default EditUserProfile;
 
-const NameInputField = () => {
+const NameInputField = ({ name, handleNameChange }) => {
 	return (
 		<>
 			<div className='flex justify-between items-center  gap-4 mb-6'>
@@ -70,7 +107,13 @@ const NameInputField = () => {
 						First Name
 					</label>
 					<br />
-					<input type='text' name='name' className='border h-9 w-full' />
+					<input
+						type='text'
+						name='name'
+						className='border h-9 w-full'
+						value={name}
+						onChange={handleNameChange}
+					/>
 					<br />
 				</div>
 				<div className='w-full'>
@@ -85,7 +128,7 @@ const NameInputField = () => {
 	);
 };
 
-const EmailInputFields = () => {
+const EmailInputFields = ({ email, handleEmailChange }) => {
 	return (
 		<>
 			<div className='flex justify-between items-center gap-4 mb-4'>
@@ -97,6 +140,9 @@ const EmailInputFields = () => {
 					<input
 						type='email'
 						name='name'
+						value={email}
+						required
+						onChange={handleEmailChange}
 						pattern='[a-z0-9._%+\-]+@[a-z0-9.\-]+\.[a-z]{2,}$'
 						className='border h-9 w-full'
 					/>
@@ -110,6 +156,7 @@ const EmailInputFields = () => {
 					<input
 						type='email'
 						name='name'
+						required
 						pattern='[a-z0-9._%+\-]+@[a-z0-9.\-]+\.[a-z]{2,}$'
 						className='border w-full h-9'
 					/>
@@ -119,15 +166,10 @@ const EmailInputFields = () => {
 	);
 };
 
-const PasswordInputFields = () => {
-	const [password, setPassword] = useState("");
+const PasswordInputFields = ({ password, handlePasswordChange }) => {
 	const [confirmPassword, setConfirmPassword] = useState("");
 	const [IsShowPassword, setIsShowPassword] = useState(false);
 	const [IsShowConfirmPassword, setIsConfirmShowPassword] = useState(false);
-
-	const handlePasswordChange = (e) => {
-		setPassword(e.target.value);
-	};
 
 	const handleShowPassword = () => {
 		setIsShowPassword((prevPassword) => !prevPassword);

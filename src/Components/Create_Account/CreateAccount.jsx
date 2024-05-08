@@ -167,7 +167,7 @@ const CreateAccount = () => {
 						<p className='text-center pt-4'>
 							Already have an account!
 							<Link to='/' className='font-bold pl-1 inline-block'>
-								Sign In
+								Sign Up
 							</Link>
 						</p>
 					</form>

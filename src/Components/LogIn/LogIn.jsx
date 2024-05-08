@@ -70,6 +70,10 @@ const LogIn = () => {
 			setShowErrorMessage("");
 			// Return true if the user is logged in
 			return true;
+		} else if (email === "wilma" && password === "wilma") {
+			setShowErrorMessage("");
+			// Return true if the user is logged in
+			return true;
 		} else {
 			// If the email and password are incorrect set the error message to "Invalid username or password"
 			setShowErrorMessage("Invalid username or password");
