@@ -1,12 +1,16 @@
 const AddStudentsForm = () => {
   return (
     <>
-      <section className="h-52 w-full bg-white rounded-md shadow-md">
-        <h1 className=" px-5 py-2 text-lg font-semibold border-b-2 border-red-200 border-dotted">
+      <section className="h-fit w-full bg-white rounded-md shadow-md">
+        <h1 className=" px-5 py-2 text-lg font-semibold border-b-[2px] border-gray-400 border-dotted">
           Basic Information
         </h1>
         <div className=" px-5 py-10">
           <Names />
+          <RollNumber_Email />
+          <RegistrationDate_Class />
+          <Gender_MobileNumber />
+          <BirthDate_BloodGroup />
         </div>
       </section>
     </>
@@ -20,12 +24,117 @@ const Names = () => {
         <input
           type="text"
           placeholder="First Name"
-          className="inline-block w-full py-2 mr-5 border-b-2 outline-none"
+          className="border-b-[2px] inline-block w-full py-2 mr-5 outline-none focus:border-blue-500 focus:border-blue-700"
         />
         <input
           type="text"
           placeholder="Last Name"
-          className=" w-full py-2 border-b-2 outline-none"
+          className=" w-full py-2 border-b-[2px] outline-none focus:border-blue-500 "
+        />
+      </div>
+    </div>
+  );
+};
+
+const RollNumber_Email = () => {
+  return (
+    <div className=" px-5 py-10">
+      <div className="gap-x-8 grid grid-cols-2">
+        <input
+          type="number"
+          required
+          placeholder="Roll No"
+          className="inline-block w-full py-2 mr-5 border-b-[2px] outline-none focus:border-blue-500"
+        />
+        <input
+          type="emai"
+          required
+          placeholder="Email"
+          className=" w-full py-2 border-b-[2px] outline-none focus:border-blue-500"
+        />
+      </div>
+    </div>
+  );
+};
+
+const RegistrationDate_Class = () => {
+  return (
+    <div className=" px-5 py-10">
+      <div className="gap-x-8 grid grid-cols-2">
+        <input
+          type="text"
+          required
+          name="registrationdate"
+          id="registrationdate"
+          onFocus={(e) => (e.target.type = "date")}
+          placeholder="Registration Date"
+          className="inline-block w-full py-2 mr-5 border-b-[2px] outline-none focus:border-blue-500"
+        />
+        <select
+          name="gender"
+          id="gender"
+          placeholder="Gender"
+          className="inline-block w-full py-2 mr-5 bg-transparent border-b-[2px] outline-none focus:border-blue-500"
+        >
+          <option value="gender" disabled selected hidden>
+            Gender
+          </option>
+          <option value="male">Male</option>
+          <option value="female">Female</option>
+          <option value="other">Other</option>
+        </select>
+      </div>
+    </div>
+  );
+};
+
+const Gender_MobileNumber = () => {
+  return (
+    <div className=" px-5 py-10">
+      <div className="gap-x-8 grid grid-cols-2">
+        <select
+          name="class"
+          id="class"
+          className="inline-block w-full py-2 mr-5 bg-transparent border-b-[2px] outline-none focus:border-blue-500"
+        >
+          <option value="class" disabled selected hidden>
+            Class
+          </option>
+          <option value="male">Computer Science</option>
+          <option value="female">Finance</option>
+          <option value="other">Mathematics</option>
+          <option value="other">International Relogion</option>
+          <option value="other">Public and Private Law</option>
+        </select>
+        <input
+          type="text"
+          placeholder="Mobile Number"
+          className=" w-full py-2 border-b-[2px] outline-none focus:border-blue-500"
+        />
+      </div>
+    </div>
+  );
+};
+
+const BirthDate_BloodGroup = () => {
+  return (
+    <div className=" px-5 py-10">
+      <div className="gap-x-8 grid grid-cols-2">
+        <input
+          type="text"
+          name="birthdate"
+          id="birthdate"
+          required
+          onFocus={(e) => (e.target.type = "date")}
+          placeholder="Birth Date"
+          className="inline-block w-full py-2 mr-5 border-b-[2px] outline-none focus:border-blue-500"
+        />
+        <input
+          type="text"
+          name="bloodgroup"
+          placeholder="Blood Group"
+          id="bloodgroup"
+          className="inline-block w-full py-2 mr-5 border-b-[2px] outline-none focus:border-blue-500"
         />
       </div>
     </div>
