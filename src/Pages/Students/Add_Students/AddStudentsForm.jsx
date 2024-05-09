@@ -1,25 +1,26 @@
+//Component for the Add Students Form page
 const AddStudentsForm = () => {
   return (
-    <>
-      <section className="h-fit w-full pb-10 bg-white rounded-md shadow-md">
-        <h1 className=" px-5 py-2 text-lg font-semibold border-b-[2px] border-gray-400 border-dotted">
-          Basic Information
-        </h1>
-        <div className=" px-5 py-6">
-          <Names />
-          <RollNumber_Email />
-          <RegistrationDate_Class />
-          <Gender_MobileNumber />
-          <BirthDate_BloodGroup />
-          <Address />
-        </div>
-
-        <div className="pl-[24rem] ">
-          <button className="tw_btn mr-8 bg-blue-500">Submit</button>
-          <button className="tw_btn bg-red-500">Cancel</button>
-        </div>
-      </section>
-    </>
+    <section className="h-fit w-full pb-10 bg-white rounded-md shadow-md">
+      {/* Header with the form title */}
+      <h1 className=" px-5 py-2 text-lg font-semibold border-b-[2px] border-gray-400 border-dotted">
+        Basic Information
+      </h1>
+      {/* Main form content */}
+      <div className=" px-5 py-6">
+        <Names />
+        <RollNumber_Email />
+        <RegistrationDate_Class />
+        <Gender_MobileNumber />
+        <BirthDate_BloodGroup />
+        <Address />
+      </div>
+      {/* Buttons to submit and cancel the form */}
+      <div className="pl-[24rem] ">
+        <button className="tw_btn mr-8 bg-blue-500">Submit</button>
+        <button className="tw_btn bg-red-500">Cancel</button>
+      </div>
+    </section>
   );
 };
 
@@ -30,7 +31,7 @@ const Names = () => {
         <input
           type="text"
           placeholder="First Name"
-          className="border-b-[2px] inline-block w-full py-2 mr-5 outline-none focus:border-blue-500 focus:border-blue-700"
+          className="border-b-[2px] inline-block w-full py-2 mr-5 outline-none focus:border-blue-500"
         />
         <input
           type="text"
