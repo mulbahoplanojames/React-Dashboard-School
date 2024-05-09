@@ -1,4 +1,14 @@
+import { useState } from "react";
+
 const EditStudent = () => {
+  const [firstName, setFirstName] = useState("Oplano");
+  const [lastName, setLastName] = useState("Mulbah");
+  const [rollNumber, setRollNumber] = useState("202211089");
+  const [email, setEmail] = useState("james@gmail.com");
+  const [className, setClassName] = useState("Computer Science");
+  const [mobileNumber, setMobileNumber] = useState("+250-789-677-897");
+  const [gender, setGender] = useState("Male");
+
   return (
     <>
       <section className="h-fit w-full pb-10 bg-white rounded-md shadow-md">
@@ -6,10 +16,25 @@ const EditStudent = () => {
           Basic Information
         </h1>
         <div className=" px-5 py-6">
-          <Names />
-          <RollNumber_Email />
+          <Names
+            firstName={firstName}
+            setFirstName={setFirstName}
+            lastName={lastName}
+            setLastName={setLastName}
+          />
+          <RollNumber_Email
+            rollNumber={rollNumber}
+            setRollNumber={setRollNumber}
+            email={email}
+            setEmail={setEmail}
+          />
           <RegistrationDate_Class />
-          <Gender_MobileNumber />
+          <Gender_MobileNumber
+            className={className}
+            setClassName={setClassName}
+            mobileNumber={mobileNumber}
+            setMobileNumber={setMobileNumber}
+          />
           <BirthDate_BloodGroup />
           <Address />
         </div>
@@ -23,7 +48,7 @@ const EditStudent = () => {
   );
 };
 
-const Names = () => {
+const Names = ({ firstName, setFirstName, lastName, setLastName }) => {
   return (
     <div className=" px-5 py-10">
       <div className="gap-x-8 grid grid-cols-2">
@@ -31,11 +56,14 @@ const Names = () => {
           type="text"
           placeholder="First Name"
           className="border-b-[2px] inline-block w-full py-2 mr-5 outline-none focus:border-blue-500 focus:border-blue-700"
-          value="John"
+          value={firstName}
+          onChange={(e) => setFirstName(e.target.value)}
         />
         <input
           type="text"
           placeholder="Last Name"
+          value={lastName}
+          onChange={(e) => setLastName(e.target.value)}
           className=" w-full py-2 border-b-[2px] outline-none focus:border-blue-500 "
         />
       </div>
@@ -43,7 +71,7 @@ const Names = () => {
   );
 };
 
-const RollNumber_Email = () => {
+const RollNumber_Email = ({ rollNumber, setRollNumber, email, setEmail }) => {
   return (
     <div className=" px-5 py-10">
       <div className="gap-x-8 grid grid-cols-2">
@@ -51,11 +79,15 @@ const RollNumber_Email = () => {
           type="number"
           required
           placeholder="Roll No"
+          value={rollNumber}
+          onChange={(e) => setRollNumber(e.target.value)}
           className="inline-block w-full py-2 mr-5 border-b-[2px] outline-none focus:border-blue-500"
         />
         <input
           type="emai"
           required
+          value={email}
+          onChange={(e) => setEmail(e.target.value)}
           placeholder="Email"
           className=" w-full py-2 border-b-[2px] outline-none focus:border-blue-500"
         />
@@ -95,18 +127,22 @@ const RegistrationDate_Class = () => {
   );
 };
 
-const Gender_MobileNumber = () => {
+const Gender_MobileNumber = ({
+  className,
+  setClassName,
+  mobileNumber,
+  setMobileNumber,
+}) => {
   return (
     <div className=" px-5 py-10">
       <div className="gap-x-8 grid grid-cols-2">
         <select
           name="class"
+          value={className}
+          onChange={(e) => setClassName(e.target.value)}
           id="class"
           className="inline-block w-full py-2 mr-5 bg-transparent border-b-[2px] outline-none focus:border-blue-500"
         >
-          <option value="class" disabled selected hidden>
-            Class
-          </option>
           <option value="male">Computer Science</option>
           <option value="female">Finance</option>
           <option value="other">Mathematics</option>
@@ -116,6 +152,8 @@ const Gender_MobileNumber = () => {
         <input
           type="text"
           placeholder="Mobile Number"
+          value={mobileNumber}
+          onChange={(e) => setMobileNumber(e.target.value)}
           className=" w-full py-2 border-b-[2px] outline-none focus:border-blue-500"
         />
       </div>

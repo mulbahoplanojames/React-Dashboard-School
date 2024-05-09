@@ -1,5 +1,9 @@
+import { useState } from "react";
+
 //Component for the Add Students Form page
 const AddStudentsForm = () => {
+  const [firstName, setFirstNeme] = useState("Jonh");
+
   return (
     <section className="h-fit w-full pb-10 bg-white rounded-md shadow-md">
       {/* Header with the form title */}
@@ -8,7 +12,7 @@ const AddStudentsForm = () => {
       </h1>
       {/* Main form content */}
       <div className=" px-5 py-6">
-        <Names />
+        <Names firstname={firstName} setFirstNeme={setFirstNeme} />
         <RollNumber_Email />
         <RegistrationDate_Class />
         <Gender_MobileNumber />
@@ -24,13 +28,15 @@ const AddStudentsForm = () => {
   );
 };
 
-const Names = () => {
+const Names = ({ firstname, setFirstNeme }) => {
   return (
     <div className=" px-5 py-10">
       <div className="gap-x-8 grid grid-cols-2">
         <input
           type="text"
           placeholder="First Name"
+          value={firstname}
+          onChange={(e) => setFirstNeme(e.target.value)}
           className="border-b-[2px] inline-block w-full py-2 mr-5 outline-none focus:border-blue-500"
         />
         <input
