@@ -1,16 +1,22 @@
 const AddStudentsForm = () => {
   return (
     <>
-      <section className="h-fit w-full bg-white rounded-md shadow-md">
+      <section className="h-fit w-full pb-10 bg-white rounded-md shadow-md">
         <h1 className=" px-5 py-2 text-lg font-semibold border-b-[2px] border-gray-400 border-dotted">
           Basic Information
         </h1>
-        <div className=" px-5 py-10">
+        <div className=" px-5 py-6">
           <Names />
           <RollNumber_Email />
           <RegistrationDate_Class />
           <Gender_MobileNumber />
           <BirthDate_BloodGroup />
+          <Address />
+        </div>
+
+        <div className="pl-[24rem] ">
+          <button className="tw_btn mr-8 bg-blue-500">Submit</button>
+          <button className="tw_btn bg-red-500">Cancel</button>
         </div>
       </section>
     </>
@@ -127,16 +133,28 @@ const BirthDate_BloodGroup = () => {
           required
           onFocus={(e) => (e.target.type = "date")}
           placeholder="Birth Date"
-          className="inline-block w-full py-2 mr-5 border-b-[2px] outline-none focus:border-blue-500"
+          className="inline-block w-full py-2 mr-5 border-b-[2px] outline-none focus:border-blue-500 "
         />
         <input
           type="text"
           name="bloodgroup"
           placeholder="Blood Group"
           id="bloodgroup"
-          className="inline-block w-full py-2 mr-5 border-b-[2px] outline-none focus:border-blue-500"
+          className="inline-block w-full py-2 mr-5 border-b-[2px] outline-none focus:border-blue-500 "
         />
       </div>
+    </div>
+  );
+};
+
+const Address = () => {
+  return (
+    <div className=" px-5 pb-4">
+      <input
+        type="text"
+        placeholder="Address"
+        className="inline-block w-full py-6 border-b-[2px] outline-none focus:border-blue-500"
+      />
     </div>
   );
 };

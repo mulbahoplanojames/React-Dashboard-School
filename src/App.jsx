@@ -10,6 +10,8 @@ import DashboardThree from "./Pages/Dashboards/Dashboard 3/DashboardThree";
 import AllStudents from "./Pages/Students/All_Students/AllStudents";
 import ListView from "./Pages/Students/All_Students/List_View/ListView";
 import GridView from "./Pages/Students/All_Students/Grid_View/GridView";
+import AddStudents from "./Pages/Students/Add_Students/AddStudents";
+import EditStudent from "./Pages/Students/Edit_Student/EditStudent";
 
 // LogIn and CreateAccount Component import
 import LogIn from "./Components/LogIn/LogIn";
@@ -17,7 +19,6 @@ import CreateAccount from "./Components/Create_Account/CreateAccount";
 
 // EditUserProfile Component import
 import EditUserProfile from "./Components/Edit_User_Profile/EditUserProfile";
-import AddStudents from "./Pages/Students/Add_Students/AddStudents";
 
 const App = () => {
   // The app is wrapped in a BrowserRouter, which provides a navigational interface
@@ -43,6 +44,7 @@ const App = () => {
             </Route>
             {/* child roots and renders the Add Students components components. */}
             <Route path="/addstudents" element={<AddStudents />} />
+            <Route path="/editstudents" element={<EditStudent />} />
           </Route>
 
           {/* // This Route component matches the path '/logout' and renders the Logout component */}
