@@ -1,6 +1,16 @@
 import { useState } from "react";
 
+/**
+ * This is the EditStudent component, this component is used to display
+ * or render the edit form for the student, this component is used with in
+ * the EditStudent Page component.
+ */
 const EditStudent = () => {
+  /**
+   * These are the initial states for the inputs,
+   * these states are being used to set the default values
+   * of the inputs.
+   */
   const [firstName, setFirstName] = useState("Oplano");
   const [lastName, setLastName] = useState("Mulbah");
   const [rollNumber, setRollNumber] = useState("202211089");
@@ -16,43 +26,70 @@ const EditStudent = () => {
   return (
     <>
       <section className="h-fit w-full pb-10 bg-white rounded-md shadow-md">
+        {/* //this is the title of the form. */}
         <h1 className=" px-5 py-2 text-lg font-semibold border-b-[2px] border-gray-400 border-dotted">
           Basic Information
         </h1>
         <div className=" px-5 py-6">
+          {/**
+           * This is the Names component, this component is used to render the first name and
+           * last name inputs.
+           */}
           <Names
             firstName={firstName}
             setFirstName={setFirstName}
             lastName={lastName}
             setLastName={setLastName}
           />
+          {/* /**
+           * This is the RollNumber_Email component, this component is used to render the roll number and email
+           * inputs.
+           */}
           <RollNumber_Email
             rollNumber={rollNumber}
             setRollNumber={setRollNumber}
             email={email}
             setEmail={setEmail}
           />
+          {/*
+           * This is the RegistrationDate_Class component, this component is used to render the registration date,
+           * class name inputs.
+           */}
           <RegistrationDate_Class
             courseName={courseName}
             setCourseName={setCourseName}
             registractionDate={registractionDate}
             setRegistrationDate={setRegistrationDate}
           />
+          {/*
+           * This is the Gender_MobileNumber component, this component is used to render the gender and mobile number
+           * inputs.
+           */}
           <Gender_MobileNumber
             gender={gender}
             setGender={setGender}
             mobileNumber={mobileNumber}
             setMobileNumber={setMobileNumber}
           />
+          {/*
+           * This is the BirthDate_BloodGroup component, this component is used to render the birth date and
+           * blood group inputs.
+           */}
           <BirthDate_BloodGroup
             bloodgroup={bloodgroup}
             setBloodGroup={setBloodGroup}
             birthDate={birthDate}
             setBirthDate={setBirthDate}
           />
+          {/*
+           * This is the Address component, this component is used to render the address input.
+           */}
           <Address address={address} setAddress={setAddress} />
         </div>
 
+        {/*
+         * This is the footer of the edit form, this is where the submit and cancel buttons are located.
+         */}
         <div className="pl-[24rem] ">
           <button className="tw_btn mr-8 bg-blue-500">Submit</button>
           <button className="tw_btn bg-red-500">Cancel</button>
