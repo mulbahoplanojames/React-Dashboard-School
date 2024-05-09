@@ -5,9 +5,13 @@ const EditStudent = () => {
   const [lastName, setLastName] = useState("Mulbah");
   const [rollNumber, setRollNumber] = useState("202211089");
   const [email, setEmail] = useState("james@gmail.com");
-  const [className, setClassName] = useState("Computer Science");
+  const [courseName, setCourseName] = useState("Computer Science");
+  const [registractionDate, setRegistrationDate] = useState("12/12/2022");
   const [mobileNumber, setMobileNumber] = useState("+250-789-677-897");
   const [gender, setGender] = useState("Male");
+  const [birthDate, setBirthDate] = useState("17/08/2002");
+  const [bloodgroup, setBloodGroup] = useState("A+");
+  const [address, setAddress] = useState("Kigali, Rwanda");
 
   return (
     <>
@@ -28,15 +32,25 @@ const EditStudent = () => {
             email={email}
             setEmail={setEmail}
           />
-          <RegistrationDate_Class />
+          <RegistrationDate_Class
+            courseName={courseName}
+            setCourseName={setCourseName}
+            registractionDate={registractionDate}
+            setRegistrationDate={setRegistrationDate}
+          />
           <Gender_MobileNumber
-            className={className}
-            setClassName={setClassName}
+            gender={gender}
+            setGender={setGender}
             mobileNumber={mobileNumber}
             setMobileNumber={setMobileNumber}
           />
-          <BirthDate_BloodGroup />
-          <Address />
+          <BirthDate_BloodGroup
+            bloodgroup={bloodgroup}
+            setBloodGroup={setBloodGroup}
+            birthDate={birthDate}
+            setBirthDate={setBirthDate}
+          />
+          <Address address={address} setAddress={setAddress} />
         </div>
 
         <div className="pl-[24rem] ">
@@ -96,21 +110,64 @@ const RollNumber_Email = ({ rollNumber, setRollNumber, email, setEmail }) => {
   );
 };
 
-const RegistrationDate_Class = () => {
+const RegistrationDate_Class = ({
+  courseName,
+  setCourseName,
+  registractionDate,
+  setRegistrationDate,
+}) => {
   return (
     <div className=" px-5 py-10">
       <div className="gap-x-8 grid grid-cols-2">
+        <select
+          name="class"
+          value={courseName}
+          onChange={(e) => setCourseName(e.target.value)}
+          id="class"
+          className="inline-block w-full py-2 mr-5 bg-transparent border-b-[2px] outline-none focus:border-blue-500"
+        >
+          <option value="male">Computer Science</option>
+          <option value="female">Finance</option>
+          <option value="other">Mathematics</option>
+          <option value="other">International Relogion</option>
+          <option value="other">Public and Private Law</option>
+        </select>
         <input
           type="text"
           required
           name="registrationdate"
           id="registrationdate"
           onFocus={(e) => (e.target.type = "date")}
+          value={registractionDate}
+          onChange={(e) => setRegistrationDate(e.target.value)}
           placeholder="Registration Date"
           className="inline-block w-full py-2 mr-5 border-b-[2px] outline-none focus:border-blue-500"
         />
+      </div>
+    </div>
+  );
+};
+
+const Gender_MobileNumber = ({
+  gender,
+  setGender,
+  mobileNumber,
+  setMobileNumber,
+}) => {
+  return (
+    <div className=" px-5 py-10">
+      <div className="gap-x-8 grid grid-cols-2">
+        <input
+          type="text"
+          placeholder="Mobile Number"
+          value={mobileNumber}
+          onChange={(e) => setMobileNumber(e.target.value)}
+          className=" w-full py-2 border-b-[2px] outline-none focus:border-blue-500"
+        />
         <select
           name="gender"
+          value={gender}
+          onChange={(e) => setGender(e.target.value)}
           id="gender"
           placeholder="Gender"
           className="inline-block w-full py-2 mr-5 bg-transparent border-b-[2px] outline-none focus:border-blue-500"
@@ -127,41 +184,12 @@ const RegistrationDate_Class = () => {
   );
 };
 
-const Gender_MobileNumber = ({
-  className,
-  setClassName,
-  mobileNumber,
-  setMobileNumber,
+const BirthDate_BloodGroup = ({
+  bloodgroup,
+  setBloodGroup,
+  birthDate,
+  setBirthDate,
 }) => {
-  return (
-    <div className=" px-5 py-10">
-      <div className="gap-x-8 grid grid-cols-2">
-        <select
-          name="class"
-          value={className}
-          onChange={(e) => setClassName(e.target.value)}
-          id="class"
-          className="inline-block w-full py-2 mr-5 bg-transparent border-b-[2px] outline-none focus:border-blue-500"
-        >
-          <option value="male">Computer Science</option>
-          <option value="female">Finance</option>
-          <option value="other">Mathematics</option>
-          <option value="other">International Relogion</option>
-          <option value="other">Public and Private Law</option>
-        </select>
-        <input
-          type="text"
-          placeholder="Mobile Number"
-          value={mobileNumber}
-          onChange={(e) => setMobileNumber(e.target.value)}
-          className=" w-full py-2 border-b-[2px] outline-none focus:border-blue-500"
-        />
-      </div>
-    </div>
-  );
-};
-
-const BirthDate_BloodGroup = () => {
   return (
     <div className=" px-5 py-10">
       <div className="gap-x-8 grid grid-cols-2">
@@ -171,7 +199,8 @@ const BirthDate_BloodGroup = () => {
           id="birthdate"
           required
           onFocus={(e) => (e.target.type = "date")}
-          placeholder="Birth Date"
+          value={birthDate}
+          onChange={(e) => setBirthDate(e.target.value)}
           className="inline-block w-full py-2 mr-5 border-b-[2px] outline-none focus:border-blue-500 "
         />
         <input
@@ -179,6 +208,8 @@ const BirthDate_BloodGroup = () => {
           name="bloodgroup"
           placeholder="Blood Group"
           id="bloodgroup"
+          value={bloodgroup}
+          onChange={(e) => setBloodGroup(e.target.value)}
           className="inline-block w-full py-2 mr-5 border-b-[2px] outline-none focus:border-blue-500 "
         />
       </div>
@@ -186,11 +217,13 @@ const BirthDate_BloodGroup = () => {
   );
 };
 
-const Address = () => {
+const Address = ({ address, setAddress }) => {
   return (
     <div className=" px-5 pb-4">
       <input
         type="text"
+        value={address}
+        onChange={(e) => setAddress(e.target.value)}
         placeholder="Address"
         className="inline-block w-full py-6 border-b-[2px] outline-none focus:border-blue-500"
       />

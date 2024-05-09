@@ -28,15 +28,13 @@ const AddStudentsForm = () => {
   );
 };
 
-const Names = ({ firstname, setFirstNeme }) => {
+const Names = () => {
   return (
     <div className=" px-5 py-10">
       <div className="gap-x-8 grid grid-cols-2">
         <input
           type="text"
           placeholder="First Name"
-          value={firstname}
-          onChange={(e) => setFirstNeme(e.target.value)}
           className="border-b-[2px] inline-block w-full py-2 mr-5 outline-none focus:border-blue-500"
         />
         <input
