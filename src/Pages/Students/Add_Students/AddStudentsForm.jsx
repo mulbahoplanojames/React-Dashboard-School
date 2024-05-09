@@ -28,15 +28,20 @@ const AddStudentsForm = () => {
   );
 };
 
+/**
+ * Component for the First Name and Last Name input fields
+ */
 const Names = () => {
   return (
     <div className=" px-5 py-10">
       <div className="gap-x-8 grid grid-cols-2">
+        {/* First Name input field */}
         <input
           type="text"
           placeholder="First Name"
           className="border-b-[2px] inline-block w-full py-2 mr-5 outline-none focus:border-blue-500"
         />
+        {/* Last Name input field */}
         <input
           type="text"
           placeholder="Last Name"
@@ -47,6 +52,9 @@ const Names = () => {
   );
 };
 
+/**
+ * Component for the Roll Number and Email input fields
+ */
 const RollNumber_Email = () => {
   return (
     <div className=" px-5 py-10">
@@ -58,7 +66,7 @@ const RollNumber_Email = () => {
           className="inline-block w-full py-2 mr-5 border-b-[2px] outline-none focus:border-blue-500"
         />
         <input
-          type="emai"
+          type="email"
           required
           placeholder="Email"
           className=" w-full py-2 border-b-[2px] outline-none focus:border-blue-500"

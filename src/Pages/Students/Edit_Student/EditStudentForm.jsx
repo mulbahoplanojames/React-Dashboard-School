@@ -99,6 +99,10 @@ const EditStudent = () => {
   );
 };
 
+/**
+ * This is the Names component, this component is used to render the first name and
+ * ast name inputs.
+ */
 const Names = ({ firstName, setFirstName, lastName, setLastName }) => {
   return (
     <div className=" px-5 py-10">
@@ -122,6 +126,10 @@ const Names = ({ firstName, setFirstName, lastName, setLastName }) => {
   );
 };
 
+/**
+ * This is the RollNumber_Email component, this component is used to render the
+ * roll number and email inputs.
+ */
 const RollNumber_Email = ({ rollNumber, setRollNumber, email, setEmail }) => {
   return (
     <div className=" px-5 py-10">
@@ -135,7 +143,7 @@ const RollNumber_Email = ({ rollNumber, setRollNumber, email, setEmail }) => {
           className="inline-block w-full py-2 mr-5 border-b-[2px] outline-none focus:border-blue-500"
         />
         <input
-          type="emai"
+          type="email"
           required
           value={email}
           onChange={(e) => setEmail(e.target.value)}
@@ -147,6 +155,10 @@ const RollNumber_Email = ({ rollNumber, setRollNumber, email, setEmail }) => {
   );
 };
 
+/**
+ * This is the RegistrationDate_Class component, this component is used to render
+ * the registration date and class inputs.
+ */
 const RegistrationDate_Class = ({
   courseName,
   setCourseName,
@@ -185,6 +197,10 @@ const RegistrationDate_Class = ({
   );
 };
 
+/**
+ * Component for Gender and MobileNumber inputs, this component is used to render
+ * the gender and mobile number inputs.
+ */
 const Gender_MobileNumber = ({
   gender,
   setGender,
@@ -209,7 +225,13 @@ const Gender_MobileNumber = ({
           placeholder="Gender"
           className="inline-block w-full py-2 mr-5 bg-transparent border-b-[2px] outline-none focus:border-blue-500"
         >
-          <option value="gender" disabled selected hidden>
+          <option
+            // Disabled selected hidden option for the gender select input
+            value="gender"
+            disabled
+            selected
+            hidden
+          >
             Gender
           </option>
           <option value="male">Male</option>
@@ -221,11 +243,15 @@ const Gender_MobileNumber = ({
   );
 };
 
+/**
+ * Component for BirthDate and BloodGroup inputs, this component is used to render
+ * the birth date and blood group inputs.
+ */
 const BirthDate_BloodGroup = ({
-  bloodgroup,
-  setBloodGroup,
   birthDate,
   setBirthDate,
+  bloodgroup,
+  setBloodGroup,
 }) => {
   return (
     <div className=" px-5 py-10">
@@ -254,9 +280,13 @@ const BirthDate_BloodGroup = ({
   );
 };
 
+/**
+ * Component for Address input, this component is used to render the address input.
+ */
 const Address = ({ address, setAddress }) => {
   return (
     <div className=" px-5 pb-4">
+      {/* Address input */}
       <input
         type="text"
         value={address}
