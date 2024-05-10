@@ -28,6 +28,7 @@ import EditCourses from "./Pages/Courses/Edit_Courses/EditCourses";
 // Department Component import
 import AddDepartment from "./Pages/Department/Add_Department/AddDepartment";
 import EditDepartment from "./Pages/Department/Edit_Department/EditDepartment";
+import AllDepartments from "./Pages/Department/All_Departments/AllDepartments";
 
 const App = () => {
   // The app is wrapped in a BrowserRouter, which provides a navigational interface
@@ -61,6 +62,7 @@ const App = () => {
             <Route path="/editcourses" element={<EditCourses />} />
 
             {/*//? child roots and renders the Departments components. */}
+            <Route path="/alldepartment" element={<AllDepartments />} />
             <Route path="/adddepartment" element={<AddDepartment />} />
             <Route path="/editdepartment" element={<EditDepartment />} />
           </Route>
