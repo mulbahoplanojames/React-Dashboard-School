@@ -21,7 +21,6 @@ export const Courses = [
   { id: "allcourses", path: "/allcourses", label: "All Courses" },
   { id: "addcourses", path: "/addcourses", label: "Add Courses" },
   { id: "editcourses", path: "/editcourses", label: "Edit Courses" },
-  { id: "aboutcourses", path: "/aboutcourses", label: "About Courses" },
 ];
 
 export const Departments = [

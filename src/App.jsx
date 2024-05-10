@@ -21,7 +21,9 @@ import CreateAccount from "./Components/Create_Account/CreateAccount";
 import EditUserProfile from "./Components/Edit_User_Profile/EditUserProfile";
 
 // Courses Component import
-import AllCourses from "./Pages/Courses/AllCourses";
+import AllCourses from "./Pages/Courses/All_Courses/AllCourses";
+import AddCourses from "./Pages/Courses/Add_Courses/AddCourses";
+import EditCourses from "./Pages/Courses/Edit_Courses/EditCourses";
 
 const App = () => {
   // The app is wrapped in a BrowserRouter, which provides a navigational interface
@@ -49,7 +51,10 @@ const App = () => {
             <Route path="/addstudents" element={<AddStudents />} />
             <Route path="/editstudents" element={<EditStudent />} />
 
+            {/* child roots and renders the Course components. */}
             <Route path="/allcourses" element={<AllCourses />} />
+            <Route path="/addcourses" element={<AddCourses />} />
+            <Route path="/editcourses" element={<EditCourses />} />
           </Route>
 
           {/* // This Route component matches the path '/logout' and renders the Logout component */}

@@ -1,5 +1,5 @@
-import DashboardOneHeader from "../../Components/Dashboard_1_Header/DashboardOneHeader";
-import allCourses from "../../Data/Data_Two";
+import DashboardOneHeader from "../../../Components/Dashboard_1_Header/DashboardOneHeader";
+import allCourses from "../../../Data/Data_Two";
 const AllCourses = () => {
   return (
     <>
