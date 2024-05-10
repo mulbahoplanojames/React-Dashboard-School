@@ -1,9 +1,10 @@
-//Component for the Add Students Form page
+import { useState } from "react";
+
 const EditDepartmentForm = () => {
   const [departmentName, setDepartmentName] = useState("Computer Science");
   const [headOfDepartment, setHeadOfDepartment] = useState("John Doe");
   const [startDate, setStartDate] = useState("12-12-2022");
-  const [studentCapicity, setStudentCapicity] = useState("20");
+  const [studentCapicity, setStudentCapicity] = useState("120");
   const [details, setDetails] = useState(
     "This department is about web development and mobile app development"
   );
@@ -50,24 +51,29 @@ const DepartmentName_HeadOfDepartment = (props) => {
   return (
     <div className=" px-5 py-10">
       <div className="gap-x-8 grid grid-cols-2">
-        {/* First Name input field */}
         <input
           type="text"
           placeholder="Department Name"
           className="border-b-[2px] inline-block w-full py-2 mr-5 outline-none focus:border-blue-500"
+          value={departmentName}
+          onChange={(e) => setDepartmentName(e.target.value)}
         />
-        {/* Last Name input field */}
         <input
           type="text"
           placeholder="Head Of Department"
           className=" w-full py-2 border-b-[2px] outline-none focus:border-blue-500 "
+          value={headOfDepartment}
+          onChange={(e) => setHeadOfDepartment(e.target.value)}
         />
       </div>
     </div>
   );
 };
 
-const DepartmentStartDate_StudentCapicity = () => {
+const DepartmentStartDate_StudentCapicity = (props) => {
+  const { startDate, setStartDate, studentCapicity, setStudentCapicity } =
+    props;
+
   return (
     <div className=" px-5 pb-4">
       <div className="gap-x-8 grid grid-cols-2">
@@ -79,18 +85,24 @@ const DepartmentStartDate_StudentCapicity = () => {
           onFocus={(e) => (e.target.type = "date")}
           placeholder="Department Start Date"
           className="inline-block w-full py-2 mr-5 border-b-[2px] outline-none focus:border-blue-500"
+          value={startDate}
+          onChange={(e) => setStartDate(e.target.value)}
         />
         <input
           type="text"
           placeholder="Student Capicity"
           className="w-full py-6 border-b-[2px] outline-none focus:border-blue-500"
+          value={studentCapicity}
+          onChange={(e) => setStudentCapicity(e.target.value)}
         />
       </div>
     </div>
   );
 };
 
-const DepartmentDetails = () => {
+const DepartmentDetails = (props) => {
+  const { details, setDetails } = props;
+
   return (
     <div className=" px-5 py-10">
       <input
@@ -100,6 +112,8 @@ const DepartmentDetails = () => {
         id="DepartmentDetails"
         placeholder="Department Details"
         className="inline-block w-full py-6 mr-5 border-b-[2px] outline-none focus:border-blue-500"
+        value={details}
+        onChange={(e) => setDetails(e.target.value)}
       />
     </div>
   );
