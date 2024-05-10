@@ -13,11 +13,9 @@ const EditCourseForm = () => {
 
   return (
     <section className="h-fit w-full pb-10 bg-white rounded-md shadow-md">
-      {/* Header with the form title */}
       <h1 className=" px-5 py-2 text-lg font-semibold border-b-[2px] border-gray-400 border-dotted">
         Course Details
       </h1>
-      {/* Main form content */}
       <div className=" px-5 py-6">
         <CourseName_Code
           courseName={courseName}

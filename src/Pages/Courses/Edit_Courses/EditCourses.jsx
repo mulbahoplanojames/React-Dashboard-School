@@ -2,8 +2,8 @@ import DashboardOneHeader from "../../../Components/Dashboard_1_Header/Dashboard
 import EditCourseForm from "./EditCoursesForm";
 
 /**
- * @description AddStudents Component
- * This is a functional component that is responsible for rendering the AddStudents Page
+ * @description EditStudents Component
+ * This is a functional component that is responsible for rendering the EditStudents Page
  */
 const EditCourses = () => {
   return (
