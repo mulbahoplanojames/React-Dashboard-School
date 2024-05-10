@@ -1,6 +1,8 @@
 import { Link } from "react-router-dom";
 import { allStudentsTableData } from "../../../Constants/Constants";
 import AllStudentsTableRow from "../../../Components/Table_Rows/AllStudentsTableRow";
+import AllDepartmentsTableRow from "../../../Components/Table_Rows/AllDepartmentsTableRow";
+import { allDepartments } from "../../../Data/Data_Two";
 
 /**
  * @description This is a component for All Students Table, this component is used with in
@@ -31,30 +33,28 @@ const AllDepartmentTable = () => {
           {/* head */}
           <thead>
             <tr className="text-base font-bold border">
-              <th></th>
-              <th>Roll No</th>
-              <th>Name</th>
-              <th>Department</th>
-              <th>Mobile Details</th>
+              <th>#</th>
+              <th>Dept. Name</th>
+              <th>Head Of Dept.</th>
+              <th>Phone</th>
               <th>Email</th>
-              <th>Admission Date</th>
-              <th>Action</th>
+              <th>Starting Year</th>
+              <th>Student Capacity</th>
+              <th>Edit</th>
             </tr>
           </thead>
           <tbody>
-            {/* row 1 */}
-            {allStudentsTableData.map((data) => (
-              <AllStudentsTableRow
-                // , name, , email, mobile, rollnumber, rating, admissiondate, acion
+            {allDepartments.map((data) => (
+              <AllDepartmentsTableRow
                 key={data.id}
-                avatar={data.avatar}
-                rollnumber={data.rollnumber}
-                studentname={data.name}
-                department={data.department}
-                mobile={data.mobile}
-                email={data.email}
-                admissiondate={data.admissiondate}
-                action={data.action}
+                id={data.id}
+                departmentName={data.departmentName}
+                headOfDepartment={data.headOfDepartment}
+                departmentHeadEmail={data.Email}
+                departmentHeadMobile={data.Phone}
+                startingYear={data.startingYear}
+                studentCapacity={data.studentCapacity}
+                edit={data.Edit}
               />
             ))}
           </tbody>
