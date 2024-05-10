@@ -24,6 +24,7 @@ import EditUserProfile from "./Components/Edit_User_Profile/EditUserProfile";
 import AllCourses from "./Pages/Courses/All_Courses/AllCourses";
 import AddCourses from "./Pages/Courses/Add_Courses/AddCourses";
 import EditCourses from "./Pages/Courses/Edit_Courses/EditCourses";
+import AddDepartment from "./Pages/Department/Add_Department/AddDepartment";
 
 const App = () => {
   // The app is wrapped in a BrowserRouter, which provides a navigational interface
@@ -38,23 +39,27 @@ const App = () => {
           {/* // This is a route that matches the root path ('/') and renders the Layout component.
 						The Route component is used to specify a path that can be navigated to. */}
           <Route path="/" element={<Layout />}>
-            {/* child roots and renders the Dashboard components. */}
+            {/*//? child roots and renders the Dashboard components. */}
             <Route path="/dashboard1" element={<DashboardOne />} />
             <Route path="/dashboard2" element={<DashboardTwo />} />
             <Route path="/dashboard3" element={<DashboardThree />} />
-            {/* child roots and renders all the student components. */}
+            {/*//? child roots and renders all the student components. */}
             <Route path="/allstudents" element={<AllStudents />}>
               <Route index element={<ListView />} />
               <Route path="gridview" element={<GridView />} />
             </Route>
-            {/* child roots and renders the Add Students components components. */}
+            {/* //?child roots and renders the Add Students components components. */}
             <Route path="/addstudents" element={<AddStudents />} />
             <Route path="/editstudents" element={<EditStudent />} />
 
-            {/* child roots and renders the Course components. */}
+            {/*//? child roots and renders the Course components. */}
             <Route path="/allcourses" element={<AllCourses />} />
             <Route path="/addcourses" element={<AddCourses />} />
             <Route path="/editcourses" element={<EditCourses />} />
+
+            {/*//? child roots and renders the Departments components. */}
+            <Route path="/adddepartment" element={<AddDepartment />} />
+
           </Route>
 
           {/* // This Route component matches the path '/logout' and renders the Logout component */}

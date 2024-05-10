@@ -1,9 +1,8 @@
 import DashboardOneHeader from "../../../Components/Dashboard_1_Header/DashboardOneHeader";
-import AddCourseForm from "./AddCourseForm";
 
 /**
  * @description AddDepartment Component
- * This is a functional component that is responsible for rendering the AddStudents Page
+ * This is a functional component that is responsible for rendering the AddDepartment Page
  */
 const AddDepartment = () => {
 	return (
@@ -12,7 +11,6 @@ const AddDepartment = () => {
 			{/* Dashboard Header Component */}
 			<DashboardOneHeader text='Add Course' />
 			{/* AddCourseForm component to render the form */}
-			<AddCourseForm />
 		</section>
 	);
 };
