@@ -38,7 +38,11 @@ const CourseCard = (props) => {
         <div className="w-full h-[120px] bg-blue-700 mb-2 overflow-hidden">
           <img src={image} alt="" className="object-cover w-full h-full" />
         </div>
-        <h1 className=" pb-2 pl-3 text-xl">{title}</h1>
+        <h1 className=" pb-2 pl-3 text-xl">{title}</h1>  {
+    id: "aboutholiday",
+    path: "/aboutholiday",
+    label: "About Holiday",
+  },
         <p className="pb-3 pl-3">Dureation: {duration}</p>
         <p className="pb-3 pl-3">Professor: {professor}</p>
         <p className="pb-3 pl-3">Students: {students}</p>

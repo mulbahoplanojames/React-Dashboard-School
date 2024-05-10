@@ -51,11 +51,6 @@ const Holidays = [
   { id: "allholiday", path: "/allholiday", label: "All Holiday" },
   { id: "addholiday", path: "/addholiday", label: "Add Holiday" },
   { id: "editholiday", path: "/editholiday", label: "Edit Holiday" },
-  {
-    id: "aboutholiday",
-    path: "/aboutholiday",
-    label: "About Holiday",
-  },
 ];
 
 export default Holidays;
