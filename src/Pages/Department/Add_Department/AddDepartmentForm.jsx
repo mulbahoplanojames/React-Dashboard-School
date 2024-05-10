@@ -9,9 +9,8 @@ const AddDepartmentForm = () => {
       {/* Main form content */}
       <div className=" px-5 py-6">
         <DepartmentName_HeadOfDepartment />
-        <CourseDetails />
-        <CourseLength_StartDate />
-        <CoursePrice_ProfessorName />
+        <DepartmentStartDate_StudentCapicity />
+        <DepartmentDetails />
       </div>
       {/* Buttons to submit and cancel the form */}
       <div className="pl-[24rem] ">
@@ -22,9 +21,6 @@ const AddDepartmentForm = () => {
   );
 };
 
-/**
- * Component for the First Name and Last Name input fields
- */
 const DepartmentName_HeadOfDepartment = () => {
   return (
     <div className=" px-5 py-10">
@@ -46,21 +42,9 @@ const DepartmentName_HeadOfDepartment = () => {
   );
 };
 
-const CourseDetails = () => {
+const DepartmentStartDate_StudentCapicity = () => {
   return (
     <div className=" px-5 pb-4">
-      <input
-        type="text"
-        placeholder="Address"
-        className="inline-block w-full py-6 border-b-[2px] outline-none focus:border-blue-500"
-      />
-    </div>
-  );
-};
-
-const CourseLength_StartDate = () => {
-  return (
-    <div className=" px-5 py-10">
       <div className="gap-x-8 grid grid-cols-2">
         <input
           type="text"
@@ -68,47 +52,30 @@ const CourseLength_StartDate = () => {
           name="startDate"
           id="startDate"
           onFocus={(e) => (e.target.type = "date")}
-          placeholder="Start From"
+          placeholder="Department Start Date"
           className="inline-block w-full py-2 mr-5 border-b-[2px] outline-none focus:border-blue-500"
         />
-
         <input
           type="text"
-          required
-          name="timelength"
-          id="timelength"
-          placeholder="Course Time Length"
-          className="inline-block w-full py-2 mr-5 border-b-[2px] outline-none focus:border-blue-500"
+          placeholder="Student Capicity"
+          className="w-full py-6 border-b-[2px] outline-none focus:border-blue-500"
         />
       </div>
     </div>
   );
 };
 
-const CoursePrice_ProfessorName = () => {
+const DepartmentDetails = () => {
   return (
     <div className=" px-5 py-10">
-      <div className="gap-x-8 grid grid-cols-2">
-        <select
-          name="class"
-          id="class"
-          className="inline-block w-full py-2 mr-5 bg-transparent border-b-[2px] outline-none focus:border-blue-500"
-        >
-          <option value="class" disabled selected hidden>
-            Professor Name
-          </option>
-          <option value="male">Pr. Oplano Jame Mulbah</option>
-          <option value="female">Finance</option>
-          <option value="other">Pr. WIlma Williams</option>
-          <option value="other">Pr. Robert Johnson</option>
-          <option value="other">Pr. Abdalla Ahmed</option>
-        </select>
-        <input
-          type="NUmber"
-          placeholder="Course Price"
-          className=" w-full py-2 border-b-[2px] outline-none focus:border-blue-500"
-        />
-      </div>
+      <input
+        type="text"
+        required
+        name="DepartmentDetails"
+        id="DepartmentDetails"
+        placeholder="Department Details"
+        className="inline-block w-full py-6 mr-5 border-b-[2px] outline-none focus:border-blue-500"
+      />
     </div>
   );
 };
