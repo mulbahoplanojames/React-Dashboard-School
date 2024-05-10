@@ -27,11 +27,6 @@ export const Departments = [
   { id: "alldepartment", path: "/alldepartment", label: "All Department" },
   { id: "adddepartment", path: "/adddepartment", label: "Add Department" },
   { id: "editdepartment", path: "/editdepartment", label: "Edit Department" },
-  {
-    id: "aboutdepartment",
-    path: "/aboutdepartment",
-    label: "About Department",
-  },
 ];
 
 export const Fees = [

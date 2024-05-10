@@ -24,7 +24,10 @@ import EditUserProfile from "./Components/Edit_User_Profile/EditUserProfile";
 import AllCourses from "./Pages/Courses/All_Courses/AllCourses";
 import AddCourses from "./Pages/Courses/Add_Courses/AddCourses";
 import EditCourses from "./Pages/Courses/Edit_Courses/EditCourses";
+
+// Department Component import
 import AddDepartment from "./Pages/Department/Add_Department/AddDepartment";
+import EditDepartment from "./Pages/Department/Edit_Department/EditDepartment";
 
 const App = () => {
   // The app is wrapped in a BrowserRouter, which provides a navigational interface
@@ -59,7 +62,7 @@ const App = () => {
 
             {/*//? child roots and renders the Departments components. */}
             <Route path="/adddepartment" element={<AddDepartment />} />
-
+            <Route path="/editdepartment" element={<EditDepartment />} />
           </Route>
 
           {/* // This Route component matches the path '/logout' and renders the Logout component */}
