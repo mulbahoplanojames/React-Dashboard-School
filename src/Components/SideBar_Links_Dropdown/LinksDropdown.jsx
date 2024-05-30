@@ -9,17 +9,17 @@ import { Link } from "react-router-dom";
 const LinksDropdown = ({ object, title, icon }) => {
 	return (
 		<>
-			<div className='flex justify-center items-center mb-3'>
-				<ul className='menu bg-base-200 w-56 rounded-box '>
+			<div className='flex items-center justify-center mb-3'>
+				<ul className='menu bg-base-200 rounded-box  w-56'>
 					<li>
 						<details onClick={() => open}>
-							<summary className='text-base active:bg-blue-600 hover:text-blue-500'>
+							<summary className='active:bg-blue-600 hover:text-blue-500 text-base'>
 								{icon}
 								<span>{title}</span>
 							</summary>
 							{/* //! Mapping over all the sidebar links data from the Constants data component  */}
 							{object.map((item) => (
-								<li className='text-base py-1' key={item.id}>
+								<li className='py-1 text-base' key={item.id}>
 									<Link to={item.path}>{item.label}</Link>
 								</li>
 							))}

@@ -42,7 +42,7 @@ const CourseCard = (props) => {
         <p className="pb-3 pl-3">Dureation: {duration}</p>
         <p className="pb-3 pl-3">Professor: {professor}</p>
         <p className="pb-3 pl-3">Students: {students}</p>
-        <button className="px-4 py-1 mb-3 text-lg text-white bg-blue-500 rounded-sm shadow-md">
+        <button className="hover:opacity-75 px-4 py-1 mb-3 text-lg text-white bg-blue-500 rounded-sm shadow-md">
           Read More
         </button>
       </div>
